@@ -1,0 +1,618 @@
+[
+  {
+    "code": "CL-PROV-011",
+    "name": "Iquique",
+    "level": 2,
+    "parentCode": "CL-TA",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 11,
+      "regionNumericCode": 1
+    }
+  },
+  {
+    "code": "CL-PROV-014",
+    "name": "Tamarugal",
+    "level": 2,
+    "parentCode": "CL-TA",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 14,
+      "regionNumericCode": 1
+    }
+  },
+  {
+    "code": "CL-PROV-021",
+    "name": "Antofagasta",
+    "level": 2,
+    "parentCode": "CL-AN",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 21,
+      "regionNumericCode": 2
+    }
+  },
+  {
+    "code": "CL-PROV-022",
+    "name": "El Loa",
+    "level": 2,
+    "parentCode": "CL-AN",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 22,
+      "regionNumericCode": 2
+    }
+  },
+  {
+    "code": "CL-PROV-023",
+    "name": "Tocopilla",
+    "level": 2,
+    "parentCode": "CL-AN",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 23,
+      "regionNumericCode": 2
+    }
+  },
+  {
+    "code": "CL-PROV-031",
+    "name": "Copiapó",
+    "level": 2,
+    "parentCode": "CL-AT",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 31,
+      "regionNumericCode": 3
+    }
+  },
+  {
+    "code": "CL-PROV-032",
+    "name": "Chañaral",
+    "level": 2,
+    "parentCode": "CL-AT",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 32,
+      "regionNumericCode": 3
+    }
+  },
+  {
+    "code": "CL-PROV-033",
+    "name": "Huasco",
+    "level": 2,
+    "parentCode": "CL-AT",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 33,
+      "regionNumericCode": 3
+    }
+  },
+  {
+    "code": "CL-PROV-041",
+    "name": "Elqui",
+    "level": 2,
+    "parentCode": "CL-CO",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 41,
+      "regionNumericCode": 4
+    }
+  },
+  {
+    "code": "CL-PROV-042",
+    "name": "Choapa",
+    "level": 2,
+    "parentCode": "CL-CO",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 42,
+      "regionNumericCode": 4
+    }
+  },
+  {
+    "code": "CL-PROV-043",
+    "name": "Limarí",
+    "level": 2,
+    "parentCode": "CL-CO",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 43,
+      "regionNumericCode": 4
+    }
+  },
+  {
+    "code": "CL-PROV-051",
+    "name": "Valparaíso",
+    "level": 2,
+    "parentCode": "CL-VS",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 51,
+      "regionNumericCode": 5
+    }
+  },
+  {
+    "code": "CL-PROV-052",
+    "name": "Isla de Pascua",
+    "level": 2,
+    "parentCode": "CL-VS",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 52,
+      "regionNumericCode": 5
+    }
+  },
+  {
+    "code": "CL-PROV-053",
+    "name": "Los Andes",
+    "level": 2,
+    "parentCode": "CL-VS",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 53,
+      "regionNumericCode": 5
+    }
+  },
+  {
+    "code": "CL-PROV-054",
+    "name": "Petorca",
+    "level": 2,
+    "parentCode": "CL-VS",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 54,
+      "regionNumericCode": 5
+    }
+  },
+  {
+    "code": "CL-PROV-055",
+    "name": "Quillota",
+    "level": 2,
+    "parentCode": "CL-VS",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 55,
+      "regionNumericCode": 5
+    }
+  },
+  {
+    "code": "CL-PROV-056",
+    "name": "San Antonio",
+    "level": 2,
+    "parentCode": "CL-VS",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 56,
+      "regionNumericCode": 5
+    }
+  },
+  {
+    "code": "CL-PROV-057",
+    "name": "San Felipe de Aconcagua",
+    "level": 2,
+    "parentCode": "CL-VS",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 57,
+      "regionNumericCode": 5
+    }
+  },
+  {
+    "code": "CL-PROV-058",
+    "name": "Marga Marga",
+    "level": 2,
+    "parentCode": "CL-VS",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 58,
+      "regionNumericCode": 5
+    }
+  },
+  {
+    "code": "CL-PROV-061",
+    "name": "Cachapoal",
+    "level": 2,
+    "parentCode": "CL-LI",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 61,
+      "regionNumericCode": 6
+    }
+  },
+  {
+    "code": "CL-PROV-062",
+    "name": "Cardenal Caro",
+    "level": 2,
+    "parentCode": "CL-LI",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 62,
+      "regionNumericCode": 6
+    }
+  },
+  {
+    "code": "CL-PROV-063",
+    "name": "Colchagua",
+    "level": 2,
+    "parentCode": "CL-LI",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 63,
+      "regionNumericCode": 6
+    }
+  },
+  {
+    "code": "CL-PROV-071",
+    "name": "Talca",
+    "level": 2,
+    "parentCode": "CL-ML",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 71,
+      "regionNumericCode": 7
+    }
+  },
+  {
+    "code": "CL-PROV-072",
+    "name": "Cauquenes",
+    "level": 2,
+    "parentCode": "CL-ML",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 72,
+      "regionNumericCode": 7
+    }
+  },
+  {
+    "code": "CL-PROV-073",
+    "name": "Curicó",
+    "level": 2,
+    "parentCode": "CL-ML",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 73,
+      "regionNumericCode": 7
+    }
+  },
+  {
+    "code": "CL-PROV-074",
+    "name": "Linares",
+    "level": 2,
+    "parentCode": "CL-ML",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 74,
+      "regionNumericCode": 7
+    }
+  },
+  {
+    "code": "CL-PROV-081",
+    "name": "Concepción",
+    "level": 2,
+    "parentCode": "CL-BI",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 81,
+      "regionNumericCode": 8
+    }
+  },
+  {
+    "code": "CL-PROV-082",
+    "name": "Arauco",
+    "level": 2,
+    "parentCode": "CL-BI",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 82,
+      "regionNumericCode": 8
+    }
+  },
+  {
+    "code": "CL-PROV-083",
+    "name": "Biobío",
+    "level": 2,
+    "parentCode": "CL-BI",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 83,
+      "regionNumericCode": 8
+    }
+  },
+  {
+    "code": "CL-PROV-091",
+    "name": "Cautín",
+    "level": 2,
+    "parentCode": "CL-AR",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 91,
+      "regionNumericCode": 9
+    }
+  },
+  {
+    "code": "CL-PROV-092",
+    "name": "Malleco",
+    "level": 2,
+    "parentCode": "CL-AR",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 92,
+      "regionNumericCode": 9
+    }
+  },
+  {
+    "code": "CL-PROV-101",
+    "name": "Llanquihue",
+    "level": 2,
+    "parentCode": "CL-LL",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 101,
+      "regionNumericCode": 10
+    }
+  },
+  {
+    "code": "CL-PROV-102",
+    "name": "Chiloé",
+    "level": 2,
+    "parentCode": "CL-LL",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 102,
+      "regionNumericCode": 10
+    }
+  },
+  {
+    "code": "CL-PROV-103",
+    "name": "Osorno",
+    "level": 2,
+    "parentCode": "CL-LL",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 103,
+      "regionNumericCode": 10
+    }
+  },
+  {
+    "code": "CL-PROV-104",
+    "name": "Palena",
+    "level": 2,
+    "parentCode": "CL-LL",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 104,
+      "regionNumericCode": 10
+    }
+  },
+  {
+    "code": "CL-PROV-111",
+    "name": "Coyhaique",
+    "level": 2,
+    "parentCode": "CL-AI",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 111,
+      "regionNumericCode": 11
+    }
+  },
+  {
+    "code": "CL-PROV-112",
+    "name": "Aysén",
+    "level": 2,
+    "parentCode": "CL-AI",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 112,
+      "regionNumericCode": 11
+    }
+  },
+  {
+    "code": "CL-PROV-113",
+    "name": "Capitán Prat",
+    "level": 2,
+    "parentCode": "CL-AI",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 113,
+      "regionNumericCode": 11
+    }
+  },
+  {
+    "code": "CL-PROV-114",
+    "name": "General Carrera",
+    "level": 2,
+    "parentCode": "CL-AI",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 114,
+      "regionNumericCode": 11
+    }
+  },
+  {
+    "code": "CL-PROV-121",
+    "name": "Magallanes",
+    "level": 2,
+    "parentCode": "CL-MA",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 121,
+      "regionNumericCode": 12
+    }
+  },
+  {
+    "code": "CL-PROV-122",
+    "name": "Antártica Chilena",
+    "level": 2,
+    "parentCode": "CL-MA",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 122,
+      "regionNumericCode": 12
+    }
+  },
+  {
+    "code": "CL-PROV-123",
+    "name": "Tierra del Fuego",
+    "level": 2,
+    "parentCode": "CL-MA",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 123,
+      "regionNumericCode": 12
+    }
+  },
+  {
+    "code": "CL-PROV-124",
+    "name": "Última Esperanza",
+    "level": 2,
+    "parentCode": "CL-MA",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 124,
+      "regionNumericCode": 12
+    }
+  },
+  {
+    "code": "CL-PROV-131",
+    "name": "Santiago",
+    "level": 2,
+    "parentCode": "CL-RM",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 131,
+      "regionNumericCode": 13
+    }
+  },
+  {
+    "code": "CL-PROV-132",
+    "name": "Cordillera",
+    "level": 2,
+    "parentCode": "CL-RM",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 132,
+      "regionNumericCode": 13
+    }
+  },
+  {
+    "code": "CL-PROV-133",
+    "name": "Chacabuco",
+    "level": 2,
+    "parentCode": "CL-RM",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 133,
+      "regionNumericCode": 13
+    }
+  },
+  {
+    "code": "CL-PROV-134",
+    "name": "Maipo",
+    "level": 2,
+    "parentCode": "CL-RM",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 134,
+      "regionNumericCode": 13
+    }
+  },
+  {
+    "code": "CL-PROV-135",
+    "name": "Melipilla",
+    "level": 2,
+    "parentCode": "CL-RM",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 135,
+      "regionNumericCode": 13
+    }
+  },
+  {
+    "code": "CL-PROV-136",
+    "name": "Talagante",
+    "level": 2,
+    "parentCode": "CL-RM",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 136,
+      "regionNumericCode": 13
+    }
+  },
+  {
+    "code": "CL-PROV-141",
+    "name": "Valdivia",
+    "level": 2,
+    "parentCode": "CL-LR",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 141,
+      "regionNumericCode": 14
+    }
+  },
+  {
+    "code": "CL-PROV-142",
+    "name": "Ranco",
+    "level": 2,
+    "parentCode": "CL-LR",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 142,
+      "regionNumericCode": 14
+    }
+  },
+  {
+    "code": "CL-PROV-151",
+    "name": "Arica",
+    "level": 2,
+    "parentCode": "CL-AP",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 151,
+      "regionNumericCode": 15
+    }
+  },
+  {
+    "code": "CL-PROV-152",
+    "name": "Parinacota",
+    "level": 2,
+    "parentCode": "CL-AP",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 152,
+      "regionNumericCode": 15
+    }
+  },
+  {
+    "code": "CL-PROV-161",
+    "name": "Diguillín",
+    "level": 2,
+    "parentCode": "CL-NB",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 161,
+      "regionNumericCode": 16
+    }
+  },
+  {
+    "code": "CL-PROV-162",
+    "name": "Itata",
+    "level": 2,
+    "parentCode": "CL-NB",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 162,
+      "regionNumericCode": 16
+    }
+  },
+  {
+    "code": "CL-PROV-163",
+    "name": "Punilla",
+    "level": 2,
+    "parentCode": "CL-NB",
+    "countryIso2": "CL",
+    "metadata": {
+      "provinceNumericCode": 163,
+      "regionNumericCode": 16
+    }
+  }
+]

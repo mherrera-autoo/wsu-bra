@@ -1,0 +1,49 @@
+@baseUrl = http://localhost:5000
+@accessToken = REPLACE_WITH_ACCESS_TOKEN
+
+### Onboard a multi-company (accounting studio) workspace
+POST {{baseUrl}}/api/onboarding/multi-company
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "displayName": "Estudio Contable Demo"
+}
+
+### Onboard an individual workspace
+POST {{baseUrl}}/api/onboarding/individual
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "taxId": "12345678-9",
+  "displayName": "Persona Demo"
+}
+
+### Onboard a holding workspace
+POST {{baseUrl}}/api/onboarding/holding
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "displayName": "Holding Demo"
+}
+
+### Add a client company to a multi-company workspace
+POST {{baseUrl}}/api/onboarding/multi-company/1/clients
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "taxId": "12345678-9",
+  "displayName": "Cliente Demo"
+}
+
+### Select a company (tenant token)
+POST {{baseUrl}}/api/onboarding/select-company
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+  "companyPublicId": "2a3b7e8a-7f0b-4f73-9c18-03a2f8b1a0e8"
+}

@@ -1,0 +1,15 @@
+services:
+  api:
+    container_name: erp-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: erp-api:latest
+    platform: linux/arm64
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8080:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ASPNETCORE_URLS: http://0.0.0.0:8080
+      ConnectionStrings__Default: "Host=${DB_HOST};Port=5432;Database=${DB_NAME};Username=${DB_USER};Password=${DB_PASSWORD};Pooling=true;Maximum Pool Size=50;"

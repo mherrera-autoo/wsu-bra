@@ -1,0 +1,58 @@
+############################
+# .NET
+############################
+bin/
+obj/
+artifacts/
+
+############################
+# Visual Studio / Rider / VS Code
+############################
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+############################
+# Logs
+############################
+*.log
+logs/
+
+############################
+# Environment / Secrets
+############################
+.env
+.env.*
+!.env.prod.example
+appsettings.json
+appsettings.*.json
+!**/appsettings.json
+
+# Permitir solo ejemplo
+!appsettings.example.json
+!ERP.Api/appsettings.json
+!ERP.Api/appsettings.Development.json
+!ERP.Api/appsettings.Production.json
+
+############################
+# OS
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# Test / Coverage
+############################
+TestResults/
+coverage/
+*.coverage
+
+############################
+# Docker
+############################
+docker-data/
+.tmp-build/

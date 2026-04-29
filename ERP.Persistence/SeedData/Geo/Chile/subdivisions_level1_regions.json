@@ -1,0 +1,178 @@
+[
+  {
+    "code": "CL-TA",
+    "name": "Tarapacá",
+    "level": 1,
+    "parentCode": null,
+    "countryIso2": "CL",
+    "metadata": {
+      "regionNumericCode": 1,
+      "abbrev": "TPCA"
+    }
+  },
+  {
+    "code": "CL-AN",
+    "name": "Antofagasta",
+    "level": 1,
+    "parentCode": null,
+    "countryIso2": "CL",
+    "metadata": {
+      "regionNumericCode": 2,
+      "abbrev": "ANTOF"
+    }
+  },
+  {
+    "code": "CL-AT",
+    "name": "Atacama",
+    "level": 1,
+    "parentCode": null,
+    "countryIso2": "CL",
+    "metadata": {
+      "regionNumericCode": 3,
+      "abbrev": "ATCMA"
+    }
+  },
+  {
+    "code": "CL-CO",
+    "name": "Coquimbo",
+    "level": 1,
+    "parentCode": null,
+    "countryIso2": "CL",
+    "metadata": {
+      "regionNumericCode": 4,
+      "abbrev": "COQ"
+    }
+  },
+  {
+    "code": "CL-VS",
+    "name": "Valparaíso",
+    "level": 1,
+    "parentCode": null,
+    "countryIso2": "CL",
+    "metadata": {
+      "regionNumericCode": 5,
+      "abbrev": "VALPO"
+    }
+  },
+  {
+    "code": "CL-LI",
+    "name": "Libertador General Bernardo O'Higgins",
+    "level": 1,
+    "parentCode": null,
+    "countryIso2": "CL",
+    "metadata": {
+      "regionNumericCode": 6,
+      "abbrev": "LGBO"
+    }
+  },
+  {
+    "code": "CL-ML",
+    "name": "Maule",
+    "level": 1,
+    "parentCode": null,
+    "countryIso2": "CL",
+    "metadata": {
+      "regionNumericCode": 7,
+      "abbrev": "MAULE"
+    }
+  },
+  {
+    "code": "CL-BI",
+    "name": "Biobío",
+    "level": 1,
+    "parentCode": null,
+    "countryIso2": "CL",
+    "metadata": {
+      "regionNumericCode": 8,
+      "abbrev": "BBIO"
+    }
+  },
+  {
+    "code": "CL-AR",
+    "name": "La Araucanía",
+    "level": 1,
+    "parentCode": null,
+    "countryIso2": "CL",
+    "metadata": {
+      "regionNumericCode": 9,
+      "abbrev": "ARAUC"
+    }
+  },
+  {
+    "code": "CL-LL",
+    "name": "Los Lagos",
+    "level": 1,
+    "parentCode": null,
+    "countryIso2": "CL",
+    "metadata": {
+      "regionNumericCode": 10,
+      "abbrev": "LAGOS"
+    }
+  },
+  {
+    "code": "CL-AI",
+    "name": "Aysén del General Carlos Ibáñez del Campo",
+    "level": 1,
+    "parentCode": null,
+    "countryIso2": "CL",
+    "metadata": {
+      "regionNumericCode": 11,
+      "abbrev": "AYSEN"
+    }
+  },
+  {
+    "code": "CL-MA",
+    "name": "Magallanes y de la Antártica Chilena",
+    "level": 1,
+    "parentCode": null,
+    "countryIso2": "CL",
+    "metadata": {
+      "regionNumericCode": 12,
+      "abbrev": "MAG"
+    }
+  },
+  {
+    "code": "CL-RM",
+    "name": "Metropolitana de Santiago",
+    "level": 1,
+    "parentCode": null,
+    "countryIso2": "CL",
+    "metadata": {
+      "regionNumericCode": 13,
+      "abbrev": "RM"
+    }
+  },
+  {
+    "code": "CL-LR",
+    "name": "Los Ríos",
+    "level": 1,
+    "parentCode": null,
+    "countryIso2": "CL",
+    "metadata": {
+      "regionNumericCode": 14,
+      "abbrev": "RIOS"
+    }
+  },
+  {
+    "code": "CL-AP",
+    "name": "Arica y Parinacota",
+    "level": 1,
+    "parentCode": null,
+    "countryIso2": "CL",
+    "metadata": {
+      "regionNumericCode": 15,
+      "abbrev": "AyP"
+    }
+  },
+  {
+    "code": "CL-NB",
+    "name": "Ñuble",
+    "level": 1,
+    "parentCode": null,
+    "countryIso2": "CL",
+    "metadata": {
+      "regionNumericCode": 16,
+      "abbrev": "NUBLE"
+    }
+  }
+]

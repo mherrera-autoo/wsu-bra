@@ -1,0 +1,11 @@
+[
+  {
+    "iso2": "CL",
+    "iso3": "CHL",
+    "numericCode": "152",
+    "name": "Chile",
+    "phonePrefix": "+56",
+    "currencyCode": "CLP",
+    "isActive": true
+  }
+]

@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <DefaultItemExcludes>$(DefaultItemExcludes);artifacts\**</DefaultItemExcludes>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ERP.Persistence\ERP.Persistence.csproj" />
+    <ProjectReference Include="..\ERP.Shared\ERP.Shared.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Identity\ERP.Modules.Identity.csproj" />
+    <ProjectReference Include="..\ERP.Modules.MasterData\ERP.Modules.MasterData.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Inventory\ERP.Modules.Inventory.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Pricing\ERP.Modules.Pricing.csproj" />
+    <ProjectReference Include="..\ERP.Modules.PharmaceuticalRegulatedInventory\ERP.Modules.PharmaceuticalRegulatedInventory.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Wms\ERP.Modules.Wms.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Purchasing\ERP.Modules.Purchasing.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Sales\ERP.Modules.Sales.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Tax\ERP.Modules.Tax.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Billing\ERP.Modules.Billing.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Accounting\ERP.Modules.Accounting.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Accounting.Contracts\ERP.Modules.Accounting.Contracts.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Subscriptions\ERP.Modules.Subscriptions.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Integrations.Contracts\ERP.Modules.Integrations.Contracts.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Integrations\ERP.Modules.Integrations.csproj" />
+    <ProjectReference Include="..\ERP.Modules.FixedAssets\ERP.Modules.FixedAssets.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Cash\ERP.Modules.Cash.csproj" />      
+    <ProjectReference Include="..\ERP.Modules.Finance\ERP.Modules.Finance.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Users\ERP.Modules.Users.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Rfid\ERP.Modules.Rfid.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Wsu\ERP.Modules.Wsu.csproj" />
+    <ProjectReference Include="..\ERP.Workflows\ERP.Workflows.csproj" />
+    <ProjectReference Include="..\ERP.Notifications\ERP.Notifications.csproj" />
+    <ProjectReference Include="..\ERP.Documents\ERP.Documents.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.104.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.7">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="10.0.7" />
+    <PackageReference Include="Microsoft.OpenApi" Version="2.3.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+	<Content Remove="artifacts\**" />
+	<None Remove="artifacts\**" />
+	<Content Remove="config\swagger-tags.json" />
+	<None Include="config\swagger-tags.json">
+		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	</None>
+  </ItemGroup>
+</Project>

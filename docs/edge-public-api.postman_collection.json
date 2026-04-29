@@ -1,0 +1,207 @@
+{
+  "info": {
+    "name": "ERP Edge Public API v1",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST events batch accepted",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{apiKey}}"
+          },
+          {
+            "key": "Idempotency-Key",
+            "value": "{{idempotencyKey}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/edge/events/batch",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "edge",
+            "events",
+            "batch"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"edgeNodeId\": \"EDGE-PLANTA-01\",\n  \"sentAtUtc\": \"2026-04-21T18:20:00Z\",\n  \"events\": [\n    {\n      \"eventId\": \"{{eventId}}\",\n      \"eventType\": \"InventoryMovementConfirmed\",\n      \"schemaVersion\": 1,\n      \"occurredAtUtc\": \"2026-04-21T18:19:58Z\",\n      \"orderId\": \"ORD-EDGE-0001\",\n      \"epcHex\": \"3008abcd\",\n      \"movementType\": \"ENTER\",\n      \"fromZoneId\": \"ZonaLobby\",\n      \"toZoneId\": \"ZonaBodega\",\n      \"zoneId\": \"ZonaBodega\",\n      \"readerId\": \"RFID-GATE-01\",\n      \"antennaId\": 1,\n      \"rssi\": -45,\n      \"metadata\": {\n        \"source\": \"edge-rfid\"\n      }\n    }\n  ]\n}"
+        }
+      }
+    },
+    {
+      "name": "GET active orders",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{apiKey}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/edge/orders/active?edgeNodeId=EDGE-PLANTA-01&readerId=RFID-GATE-01",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "edge",
+            "orders",
+            "active"
+          ],
+          "query": [
+            {
+              "key": "edgeNodeId",
+              "value": "EDGE-PLANTA-01"
+            },
+            {
+              "key": "readerId",
+              "value": "RFID-GATE-01"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET active orders with If-None-Match",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{apiKey}}"
+          },
+          {
+            "key": "If-None-Match",
+            "value": "{{etag}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/edge/orders/active?edgeNodeId=EDGE-PLANTA-01&readerId=RFID-GATE-01",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "edge",
+            "orders",
+            "active"
+          ],
+          "query": [
+            {
+              "key": "edgeNodeId",
+              "value": "EDGE-PLANTA-01"
+            },
+            {
+              "key": "readerId",
+              "value": "RFID-GATE-01"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET ready orders",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{apiKey}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/edge/orders/ready?edgeNodeId=EDGE-PLANTA-01",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "edge",
+            "orders",
+            "ready"
+          ],
+          "query": [
+            {
+              "key": "edgeNodeId",
+              "value": "EDGE-PLANTA-01"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET ready orders with If-None-Match",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "{{apiKey}}"
+          },
+          {
+            "key": "If-None-Match",
+            "value": "{{etag}}"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/edge/orders/ready?edgeNodeId=EDGE-PLANTA-01",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "edge",
+            "orders",
+            "ready"
+          ],
+          "query": [
+            {
+              "key": "edgeNodeId",
+              "value": "EDGE-PLANTA-01"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5116"
+    },
+    {
+      "key": "apiKey",
+      "value": "dev-edge-key-change-me"
+    },
+    {
+      "key": "idempotencyKey",
+      "value": "11111111-2222-3333-4444-555555555555"
+    },
+    {
+      "key": "eventId",
+      "value": "8eec3498-f734-4d43-b5f6-f9661f3fc1f8"
+    },
+    {
+      "key": "etag",
+      "value": "\"replace-with-etag\""
+    }
+  ]
+}

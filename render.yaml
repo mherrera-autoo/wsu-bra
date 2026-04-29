@@ -1,0 +1,45 @@
+services:
+  - type: web
+    name: erp-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: Jwt__Issuer
+        value: ERP
+      - key: Jwt__Audience
+        value: ERP
+      - key: GlobalSeed__Key
+        value: crJSu5MDT1n8uPEU7lWo
+      - key: Bootstrap__Organization__Name
+        value: Autoo ERP Workspace
+      - key: Bootstrap__Organization__DisplayName
+        value: Autoo ERP Workspace
+      - key: Bootstrap__Organization__AccountType
+        value: MultiCompany
+      - key: Bootstrap__Company
+        value: '[{"Name": "Autoo ERP Demo", "TaxId": "12345678-9", "OrganizationName": "Autoo ERP Demo"}, {"Name": "Autoo ERP Demo 2", "TaxId": "11111111-1", "OrganizationName": "Autoo ERP Demo 2"}]'
+      - key: GeoSeed__CountriesResource
+        value: ERP.Persistence.SeedData.Geo.Chile.country.json
+      - key: GeoSeed__SubdivisionsLevel1Resource
+        value: ERP.Persistence.SeedData.Geo.Chile.subdivisions_level1_regions.json
+      - key: GeoSeed__SubdivisionsLevel2Resource
+        value: ERP.Persistence.SeedData.Geo.Chile.subdivisions_level2_provinces.json
+      - key: GeoSeed__CitiesResource
+        value: ERP.Persistence.SeedData.Geo.Chile.comunas_346.json
+      - key: GeoSeed__LocalitiesResource
+        value: ERP.Persistence.SeedData.Geo.Chile.localities.json
+    # Configurar estas variables sensibles como secrets en Render Dashboard
+    # JWT_SIGNING_KEY
+    # Bootstrap__AdminEmail
+    # Bootstrap__AdminPassword
+    # Bootstrap__BootstrapToken
+    # DevSeed__Key
+    # ConnectionStrings__ErpDatabase (cuando crees la DB en Render)
+
+databases:
+  - name: erp-postgres
+    databaseName: erp
+    user: erp
+    # Configurar password como secret en Render Dashboard

@@ -1,0 +1,1109 @@
+[
+  {
+    "Code": "CLF",
+    "NumericCode": 990,
+    "Name": "Unidad de Fomento",
+    "Symbol": "UF",
+    "MinorUnits": 4,
+    "IsActive": true,
+    "Order": 1
+  },
+  {
+    "Code": "CLP",
+    "NumericCode": 152,
+    "Name": "Chilean Peso",
+    "Symbol": "$",
+    "MinorUnits": 0,
+    "IsActive": true,
+    "Order": 1
+  },
+  {
+    "Code": "EUR",
+    "NumericCode": 978,
+    "Name": "Euro",
+    "Symbol": "€",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 2
+  },
+  {
+    "Code": "USD",
+    "NumericCode": 840,
+    "Name": "US Dollar",
+    "Symbol": "US$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 2
+  },
+  {
+    "Code": "CNY",
+    "NumericCode": 156,
+    "Name": "Yuan Renminbi",
+    "Symbol": "CN¥",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 2
+  },
+  {
+    "Code": "ARS",
+    "NumericCode": 32,
+    "Name": "Argentine Peso",
+    "Symbol": "$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 3
+  },
+  {
+    "Code": "BOB",
+    "NumericCode": 68,
+    "Name": "Boliviano",
+    "Symbol": "Bs",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 3
+  },
+  {
+    "Code": "BRL",
+    "NumericCode": 986,
+    "Name": "Brazilian Real",
+    "Symbol": "R$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 3
+  },
+  {
+    "Code": "BZD",
+    "NumericCode": 84,
+    "Name": "Belize Dollar",
+    "Symbol": "BZ$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 3
+  },
+  {
+    "Code": "COP",
+    "NumericCode": 170,
+    "Name": "Colombian Peso",
+    "Symbol": "$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 3
+  },
+  {
+    "Code": "CRC",
+    "NumericCode": 188,
+    "Name": "Costa Rican Colon",
+    "Symbol": "₡",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 3
+  },
+  {
+    "Code": "CUP",
+    "NumericCode": 192,
+    "Name": "Cuban Peso",
+    "Symbol": "$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 3
+  },
+  {
+    "Code": "DOP",
+    "NumericCode": 214,
+    "Name": "Dominican Peso",
+    "Symbol": "RD$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 3
+  },
+  {
+    "Code": "GTQ",
+    "NumericCode": 320,
+    "Name": "Quetzal",
+    "Symbol": "GTQ",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 3
+  },
+  {
+    "Code": "GYD",
+    "NumericCode": 328,
+    "Name": "Guyana Dollar",
+    "Symbol": "$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 3
+  },
+  {
+    "Code": "HNL",
+    "NumericCode": 340,
+    "Name": "Lempira",
+    "Symbol": "HNL",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 3
+  },
+  {
+    "Code": "MXN",
+    "NumericCode": 484,
+    "Name": "Mexican Peso",
+    "Symbol": "MX$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 3
+  },
+  {
+    "Code": "NIO",
+    "NumericCode": 558,
+    "Name": "Cordoba Oro",
+    "Symbol": "C$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 3
+  },
+  {
+    "Code": "PAB",
+    "NumericCode": 590,
+    "Name": "Balboa",
+    "Symbol": "B/.",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 3
+  },
+  {
+    "Code": "PEN",
+    "NumericCode": 604,
+    "Name": "Sol",
+    "Symbol": "S/.",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 3
+  },
+  {
+    "Code": "PYG",
+    "NumericCode": 600,
+    "Name": "Guarani",
+    "Symbol": "₲",
+    "MinorUnits": 0,
+    "IsActive": true,
+    "Order": 3
+  },
+  {
+    "Code": "UYU",
+    "NumericCode": 858,
+    "Name": "Peso Uruguayo",
+    "Symbol": "$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 3
+  },
+  {
+    "Code": "VES",
+    "NumericCode": 928,
+    "Name": "Bolívar Soberano",
+    "Symbol": "Bs.",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 3
+  },
+  {
+    "Code": "AED",
+    "NumericCode": 784,
+    "Name": "UAE Dirham",
+    "Symbol": "AED",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "AFN",
+    "NumericCode": 971,
+    "Name": "Afghani",
+    "Symbol": "Af",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "ALL",
+    "NumericCode": 8,
+    "Name": "Lek",
+    "Symbol": "ALL",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "AMD",
+    "NumericCode": 51,
+    "Name": "Armenian Dram",
+    "Symbol": "AMD",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "AUD",
+    "NumericCode": 36,
+    "Name": "Australian Dollar",
+    "Symbol": "AU$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "AZN",
+    "NumericCode": 944,
+    "Name": "Azerbaijan Manat",
+    "Symbol": "man.",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "BAM",
+    "NumericCode": 977,
+    "Name": "Convertible Mark",
+    "Symbol": "KM",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "BDT",
+    "NumericCode": 50,
+    "Name": "Taka",
+    "Symbol": "Tk",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "BHD",
+    "NumericCode": 48,
+    "Name": "Bahraini Dinar",
+    "Symbol": "BD",
+    "MinorUnits": 3,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "BIF",
+    "NumericCode": 108,
+    "Name": "Burundi Franc",
+    "Symbol": "FBu",
+    "MinorUnits": 0,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "BMD",
+    "NumericCode": 60,
+    "Name": "Bermudian Dollar",
+    "Symbol": "$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "BND",
+    "NumericCode": 96,
+    "Name": "Brunei Dollar",
+    "Symbol": "BN$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "BSD",
+    "NumericCode": 44,
+    "Name": "Bahamian Dollar",
+    "Symbol": "$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "BWP",
+    "NumericCode": 72,
+    "Name": "Pula",
+    "Symbol": "BWP",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "BYN",
+    "NumericCode": 933,
+    "Name": "Belarusian Ruble",
+    "Symbol": "Br",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "CAD",
+    "NumericCode": 124,
+    "Name": "Canadian Dollar",
+    "Symbol": "CA$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "CDF",
+    "NumericCode": 976,
+    "Name": "Congolese Franc",
+    "Symbol": "CDF",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "CHF",
+    "NumericCode": 756,
+    "Name": "Swiss Franc",
+    "Symbol": "CHF",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "CVE",
+    "NumericCode": 132,
+    "Name": "Cabo Verde Escudo",
+    "Symbol": "CV$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "CZK",
+    "NumericCode": 203,
+    "Name": "Czech Koruna",
+    "Symbol": "Kč",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "DJF",
+    "NumericCode": 262,
+    "Name": "Djibouti Franc",
+    "Symbol": "Fdj",
+    "MinorUnits": 0,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "DKK",
+    "NumericCode": 208,
+    "Name": "Danish Krone",
+    "Symbol": "Dkr",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "DZD",
+    "NumericCode": 12,
+    "Name": "Algerian Dinar",
+    "Symbol": "DA",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "EGP",
+    "NumericCode": 818,
+    "Name": "Egyptian Pound",
+    "Symbol": "EGP",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "ERN",
+    "NumericCode": 232,
+    "Name": "Nakfa",
+    "Symbol": "Nfk",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "ETB",
+    "NumericCode": 230,
+    "Name": "Ethiopian Birr",
+    "Symbol": "Br",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "FKP",
+    "NumericCode": 238,
+    "Name": "Falkland Islands Pound",
+    "Symbol": "£",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "GBP",
+    "NumericCode": 826,
+    "Name": "Pound Sterling",
+    "Symbol": "£",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "GEL",
+    "NumericCode": 981,
+    "Name": "Lari",
+    "Symbol": "GEL",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "GHS",
+    "NumericCode": 936,
+    "Name": "Ghana Cedi",
+    "Symbol": "GH₵",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "GIP",
+    "NumericCode": 292,
+    "Name": "Gibraltar Pound",
+    "Symbol": "£",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "GNF",
+    "NumericCode": 324,
+    "Name": "Guinean Franc",
+    "Symbol": "FG",
+    "MinorUnits": 0,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "HKD",
+    "NumericCode": 344,
+    "Name": "Hong Kong Dollar",
+    "Symbol": "HK$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "HUF",
+    "NumericCode": 348,
+    "Name": "Forint",
+    "Symbol": "Ft",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "IDR",
+    "NumericCode": 360,
+    "Name": "Rupiah",
+    "Symbol": "Rp",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "ILS",
+    "NumericCode": 376,
+    "Name": "New Israeli Sheqel",
+    "Symbol": "₪",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "INR",
+    "NumericCode": 356,
+    "Name": "Indian Rupee",
+    "Symbol": "Rs",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "IQD",
+    "NumericCode": 368,
+    "Name": "Iraqi Dinar",
+    "Symbol": "IQD",
+    "MinorUnits": 3,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "IRR",
+    "NumericCode": 364,
+    "Name": "Iranian Rial",
+    "Symbol": "IRR",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "ISK",
+    "NumericCode": 352,
+    "Name": "Iceland Krona",
+    "Symbol": "Ikr",
+    "MinorUnits": 0,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "JMD",
+    "NumericCode": 388,
+    "Name": "Jamaican Dollar",
+    "Symbol": "J$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "JOD",
+    "NumericCode": 400,
+    "Name": "Jordanian Dinar",
+    "Symbol": "JD",
+    "MinorUnits": 3,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "JPY",
+    "NumericCode": 392,
+    "Name": "Yen",
+    "Symbol": "¥",
+    "MinorUnits": 0,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "KES",
+    "NumericCode": 404,
+    "Name": "Kenyan Shilling",
+    "Symbol": "Ksh",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "KHR",
+    "NumericCode": 116,
+    "Name": "Riel",
+    "Symbol": "KHR",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "KMF",
+    "NumericCode": 174,
+    "Name": "Comorian Franc",
+    "Symbol": "CF",
+    "MinorUnits": 0,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "KRW",
+    "NumericCode": 410,
+    "Name": "Won",
+    "Symbol": "₩",
+    "MinorUnits": 0,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "KWD",
+    "NumericCode": 414,
+    "Name": "Kuwaiti Dinar",
+    "Symbol": "KD",
+    "MinorUnits": 3,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "KYD",
+    "NumericCode": 136,
+    "Name": "Cayman Islands Dollar",
+    "Symbol": "$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "KZT",
+    "NumericCode": 398,
+    "Name": "Tenge",
+    "Symbol": "KZT",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "LBP",
+    "NumericCode": 422,
+    "Name": "Lebanese Pound",
+    "Symbol": "L.L.",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "LKR",
+    "NumericCode": 144,
+    "Name": "Sri Lanka Rupee",
+    "Symbol": "SLRs",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "LRD",
+    "NumericCode": 430,
+    "Name": "Liberian Dollar",
+    "Symbol": "$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "LYD",
+    "NumericCode": 434,
+    "Name": "Libyan Dinar",
+    "Symbol": "LD",
+    "MinorUnits": 3,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "MAD",
+    "NumericCode": 504,
+    "Name": "Moroccan Dirham",
+    "Symbol": "MAD",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "MDL",
+    "NumericCode": 498,
+    "Name": "Moldovan Leu",
+    "Symbol": "MDL",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "MGA",
+    "NumericCode": 969,
+    "Name": "Malagasy Ariary",
+    "Symbol": "MGA",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "MKD",
+    "NumericCode": 807,
+    "Name": "Denar",
+    "Symbol": "MKD",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "MMK",
+    "NumericCode": 104,
+    "Name": "Kyat",
+    "Symbol": "MMK",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "MOP",
+    "NumericCode": 446,
+    "Name": "Pataca",
+    "Symbol": "MOP$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "MUR",
+    "NumericCode": 480,
+    "Name": "Mauritius Rupee",
+    "Symbol": "MURs",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "MYR",
+    "NumericCode": 458,
+    "Name": "Malaysian Ringgit",
+    "Symbol": "RM",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "MZN",
+    "NumericCode": 943,
+    "Name": "Mozambique Metical",
+    "Symbol": "MTn",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "NAD",
+    "NumericCode": 516,
+    "Name": "Namibia Dollar",
+    "Symbol": "N$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "NGN",
+    "NumericCode": 566,
+    "Name": "Naira",
+    "Symbol": "₦",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "NOK",
+    "NumericCode": 578,
+    "Name": "Norwegian Krone",
+    "Symbol": "Nkr",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "NPR",
+    "NumericCode": 524,
+    "Name": "Nepalese Rupee",
+    "Symbol": "NPRs",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "NZD",
+    "NumericCode": 554,
+    "Name": "New Zealand Dollar",
+    "Symbol": "NZ$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "OMR",
+    "NumericCode": 512,
+    "Name": "Rial Omani",
+    "Symbol": "OMR",
+    "MinorUnits": 3,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "PHP",
+    "NumericCode": 608,
+    "Name": "Philippine Peso",
+    "Symbol": "₱",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "PKR",
+    "NumericCode": 586,
+    "Name": "Pakistan Rupee",
+    "Symbol": "PKRs",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "PLN",
+    "NumericCode": 985,
+    "Name": "Zloty",
+    "Symbol": "zł",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "QAR",
+    "NumericCode": 634,
+    "Name": "Qatari Rial",
+    "Symbol": "QR",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "RON",
+    "NumericCode": 946,
+    "Name": "Romanian Leu",
+    "Symbol": "RON",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "RSD",
+    "NumericCode": 941,
+    "Name": "Serbian Dinar",
+    "Symbol": "din.",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "RUB",
+    "NumericCode": 643,
+    "Name": "Russian Ruble",
+    "Symbol": "₽",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "RWF",
+    "NumericCode": 646,
+    "Name": "Rwanda Franc",
+    "Symbol": "RWF",
+    "MinorUnits": 0,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "SAR",
+    "NumericCode": 682,
+    "Name": "Saudi Riyal",
+    "Symbol": "SR",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "SBD",
+    "NumericCode": 90,
+    "Name": "Solomon Islands Dollar",
+    "Symbol": "$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "SDG",
+    "NumericCode": 938,
+    "Name": "Sudanese Pound",
+    "Symbol": "SDG",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "SEK",
+    "NumericCode": 752,
+    "Name": "Swedish Krona",
+    "Symbol": "Skr",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "SGD",
+    "NumericCode": 702,
+    "Name": "Singapore Dollar",
+    "Symbol": "S$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "SOS",
+    "NumericCode": 706,
+    "Name": "Somali Shilling",
+    "Symbol": "Ssh",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "SRD",
+    "NumericCode": 968,
+    "Name": "Surinam Dollar",
+    "Symbol": "$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "SYP",
+    "NumericCode": 760,
+    "Name": "Syrian Pound",
+    "Symbol": "SY£",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "THB",
+    "NumericCode": 764,
+    "Name": "Baht",
+    "Symbol": "฿",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "TND",
+    "NumericCode": 788,
+    "Name": "Tunisian Dinar",
+    "Symbol": "DT",
+    "MinorUnits": 3,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "TOP",
+    "NumericCode": 776,
+    "Name": "Pa’anga",
+    "Symbol": "T$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "TRY",
+    "NumericCode": 949,
+    "Name": "Turkish Lira",
+    "Symbol": "TL",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "TTD",
+    "NumericCode": 780,
+    "Name": "Trinidad and Tobago Dollar",
+    "Symbol": "TT$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "TWD",
+    "NumericCode": 901,
+    "Name": "New Taiwan Dollar",
+    "Symbol": "NT$",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "TZS",
+    "NumericCode": 834,
+    "Name": "Tanzanian Shilling",
+    "Symbol": "TSh",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "UAH",
+    "NumericCode": 980,
+    "Name": "Hryvnia",
+    "Symbol": "₴",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "UGX",
+    "NumericCode": 800,
+    "Name": "Uganda Shilling",
+    "Symbol": "USh",
+    "MinorUnits": 0,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "UZS",
+    "NumericCode": 860,
+    "Name": "Uzbekistan Sum",
+    "Symbol": "UZS",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "VND",
+    "NumericCode": 704,
+    "Name": "Dong",
+    "Symbol": "₫",
+    "MinorUnits": 0,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "XAF",
+    "NumericCode": 950,
+    "Name": "CFA Franc BEAC",
+    "Symbol": "FCFA",
+    "MinorUnits": 0,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "XOF",
+    "NumericCode": 952,
+    "Name": "CFA Franc BCEAO",
+    "Symbol": "CFA",
+    "MinorUnits": 0,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "YER",
+    "NumericCode": 886,
+    "Name": "Yemeni Rial",
+    "Symbol": "YR",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  },
+  {
+    "Code": "ZAR",
+    "NumericCode": 710,
+    "Name": "Rand",
+    "Symbol": "R",
+    "MinorUnits": 2,
+    "IsActive": true,
+    "Order": 4
+  }
+]

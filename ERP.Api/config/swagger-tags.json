@@ -1,0 +1,6 @@
+{
+  "CompanyUnitsOfMeasure": {
+    "title": "CompanyUnitsOfMeasure",
+    "description": "<p><strong>Scope:</strong> enable/disable Units of Measure per company (not the global catalog).</p><p><strong>Rule:</strong> all transactions must reference the company-enabled list.</p><p><strong>Why:</strong></p><ul><li>Consistent data</li><li>Valid conversions</li><li>Regulatory compliance (pharma/logistics/finance)</li><li>No free-text units</li></ul>"
+  }
+}

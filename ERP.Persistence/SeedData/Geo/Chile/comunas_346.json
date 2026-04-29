@@ -1,0 +1,3462 @@
+[
+  {
+    "name": "Iquique",
+    "officialCode": "01101",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-011",
+    "metadata": {
+      "regionNumericCode": 1,
+      "provinceNumericCode": 11
+    }
+  },
+  {
+    "name": "Alto Hospicio",
+    "officialCode": "01107",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-011",
+    "metadata": {
+      "regionNumericCode": 1,
+      "provinceNumericCode": 11
+    }
+  },
+  {
+    "name": "Pozo Almonte",
+    "officialCode": "01401",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-014",
+    "metadata": {
+      "regionNumericCode": 1,
+      "provinceNumericCode": 14
+    }
+  },
+  {
+    "name": "Camiña",
+    "officialCode": "01402",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-014",
+    "metadata": {
+      "regionNumericCode": 1,
+      "provinceNumericCode": 14
+    }
+  },
+  {
+    "name": "Colchane",
+    "officialCode": "01403",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-014",
+    "metadata": {
+      "regionNumericCode": 1,
+      "provinceNumericCode": 14
+    }
+  },
+  {
+    "name": "Huara",
+    "officialCode": "01404",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-014",
+    "metadata": {
+      "regionNumericCode": 1,
+      "provinceNumericCode": 14
+    }
+  },
+  {
+    "name": "Pica",
+    "officialCode": "01405",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-014",
+    "metadata": {
+      "regionNumericCode": 1,
+      "provinceNumericCode": 14
+    }
+  },
+  {
+    "name": "Antofagasta",
+    "officialCode": "02101",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-021",
+    "metadata": {
+      "regionNumericCode": 2,
+      "provinceNumericCode": 21
+    }
+  },
+  {
+    "name": "Mejillones",
+    "officialCode": "02102",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-021",
+    "metadata": {
+      "regionNumericCode": 2,
+      "provinceNumericCode": 21
+    }
+  },
+  {
+    "name": "Sierra Gorda",
+    "officialCode": "02103",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-021",
+    "metadata": {
+      "regionNumericCode": 2,
+      "provinceNumericCode": 21
+    }
+  },
+  {
+    "name": "Taltal",
+    "officialCode": "02104",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-021",
+    "metadata": {
+      "regionNumericCode": 2,
+      "provinceNumericCode": 21
+    }
+  },
+  {
+    "name": "Calama",
+    "officialCode": "02201",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-022",
+    "metadata": {
+      "regionNumericCode": 2,
+      "provinceNumericCode": 22
+    }
+  },
+  {
+    "name": "Ollagüe",
+    "officialCode": "02202",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-022",
+    "metadata": {
+      "regionNumericCode": 2,
+      "provinceNumericCode": 22
+    }
+  },
+  {
+    "name": "San Pedro de Atacama",
+    "officialCode": "02203",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-022",
+    "metadata": {
+      "regionNumericCode": 2,
+      "provinceNumericCode": 22
+    }
+  },
+  {
+    "name": "Tocopilla",
+    "officialCode": "02301",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-023",
+    "metadata": {
+      "regionNumericCode": 2,
+      "provinceNumericCode": 23
+    }
+  },
+  {
+    "name": "María Elena",
+    "officialCode": "02302",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-023",
+    "metadata": {
+      "regionNumericCode": 2,
+      "provinceNumericCode": 23
+    }
+  },
+  {
+    "name": "Copiapó",
+    "officialCode": "03101",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-031",
+    "metadata": {
+      "regionNumericCode": 3,
+      "provinceNumericCode": 31
+    }
+  },
+  {
+    "name": "Caldera",
+    "officialCode": "03102",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-031",
+    "metadata": {
+      "regionNumericCode": 3,
+      "provinceNumericCode": 31
+    }
+  },
+  {
+    "name": "Tierra Amarilla",
+    "officialCode": "03103",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-031",
+    "metadata": {
+      "regionNumericCode": 3,
+      "provinceNumericCode": 31
+    }
+  },
+  {
+    "name": "Chañaral",
+    "officialCode": "03201",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-032",
+    "metadata": {
+      "regionNumericCode": 3,
+      "provinceNumericCode": 32
+    }
+  },
+  {
+    "name": "Diego de Almagro",
+    "officialCode": "03202",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-032",
+    "metadata": {
+      "regionNumericCode": 3,
+      "provinceNumericCode": 32
+    }
+  },
+  {
+    "name": "Vallenar",
+    "officialCode": "03301",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-033",
+    "metadata": {
+      "regionNumericCode": 3,
+      "provinceNumericCode": 33
+    }
+  },
+  {
+    "name": "Alto del Carmen",
+    "officialCode": "03302",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-033",
+    "metadata": {
+      "regionNumericCode": 3,
+      "provinceNumericCode": 33
+    }
+  },
+  {
+    "name": "Freirina",
+    "officialCode": "03303",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-033",
+    "metadata": {
+      "regionNumericCode": 3,
+      "provinceNumericCode": 33
+    }
+  },
+  {
+    "name": "Huasco",
+    "officialCode": "03304",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-033",
+    "metadata": {
+      "regionNumericCode": 3,
+      "provinceNumericCode": 33
+    }
+  },
+  {
+    "name": "La Serena",
+    "officialCode": "04101",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-041",
+    "metadata": {
+      "regionNumericCode": 4,
+      "provinceNumericCode": 41
+    }
+  },
+  {
+    "name": "Coquimbo",
+    "officialCode": "04102",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-041",
+    "metadata": {
+      "regionNumericCode": 4,
+      "provinceNumericCode": 41
+    }
+  },
+  {
+    "name": "Andacollo",
+    "officialCode": "04103",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-041",
+    "metadata": {
+      "regionNumericCode": 4,
+      "provinceNumericCode": 41
+    }
+  },
+  {
+    "name": "La Higuera",
+    "officialCode": "04104",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-041",
+    "metadata": {
+      "regionNumericCode": 4,
+      "provinceNumericCode": 41
+    }
+  },
+  {
+    "name": "Paiguano",
+    "officialCode": "04105",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-041",
+    "metadata": {
+      "regionNumericCode": 4,
+      "provinceNumericCode": 41
+    }
+  },
+  {
+    "name": "Vicuña",
+    "officialCode": "04106",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-041",
+    "metadata": {
+      "regionNumericCode": 4,
+      "provinceNumericCode": 41
+    }
+  },
+  {
+    "name": "Illapel",
+    "officialCode": "04201",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-042",
+    "metadata": {
+      "regionNumericCode": 4,
+      "provinceNumericCode": 42
+    }
+  },
+  {
+    "name": "Canela",
+    "officialCode": "04202",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-042",
+    "metadata": {
+      "regionNumericCode": 4,
+      "provinceNumericCode": 42
+    }
+  },
+  {
+    "name": "Los Vilos",
+    "officialCode": "04203",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-042",
+    "metadata": {
+      "regionNumericCode": 4,
+      "provinceNumericCode": 42
+    }
+  },
+  {
+    "name": "Salamanca",
+    "officialCode": "04204",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-042",
+    "metadata": {
+      "regionNumericCode": 4,
+      "provinceNumericCode": 42
+    }
+  },
+  {
+    "name": "Ovalle",
+    "officialCode": "04301",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-043",
+    "metadata": {
+      "regionNumericCode": 4,
+      "provinceNumericCode": 43
+    }
+  },
+  {
+    "name": "Combarbalá",
+    "officialCode": "04302",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-043",
+    "metadata": {
+      "regionNumericCode": 4,
+      "provinceNumericCode": 43
+    }
+  },
+  {
+    "name": "Monte Patria",
+    "officialCode": "04303",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-043",
+    "metadata": {
+      "regionNumericCode": 4,
+      "provinceNumericCode": 43
+    }
+  },
+  {
+    "name": "Punitaqui",
+    "officialCode": "04304",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-043",
+    "metadata": {
+      "regionNumericCode": 4,
+      "provinceNumericCode": 43
+    }
+  },
+  {
+    "name": "Río Hurtado",
+    "officialCode": "04305",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-043",
+    "metadata": {
+      "regionNumericCode": 4,
+      "provinceNumericCode": 43
+    }
+  },
+  {
+    "name": "Valparaíso",
+    "officialCode": "05101",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-051",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 51
+    }
+  },
+  {
+    "name": "Casablanca",
+    "officialCode": "05102",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-051",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 51
+    }
+  },
+  {
+    "name": "Concón",
+    "officialCode": "05103",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-051",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 51
+    }
+  },
+  {
+    "name": "Juan Fernández",
+    "officialCode": "05104",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-051",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 51
+    }
+  },
+  {
+    "name": "Puchuncaví",
+    "officialCode": "05105",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-051",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 51
+    }
+  },
+  {
+    "name": "Quintero",
+    "officialCode": "05107",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-051",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 51
+    }
+  },
+  {
+    "name": "Viña del Mar",
+    "officialCode": "05109",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-051",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 51
+    }
+  },
+  {
+    "name": "Isla de Pascua",
+    "officialCode": "05201",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-052",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 52
+    }
+  },
+  {
+    "name": "Los Andes",
+    "officialCode": "05301",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-053",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 53
+    }
+  },
+  {
+    "name": "Calle Larga",
+    "officialCode": "05302",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-053",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 53
+    }
+  },
+  {
+    "name": "Rinconada",
+    "officialCode": "05303",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-053",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 53
+    }
+  },
+  {
+    "name": "San Esteban",
+    "officialCode": "05304",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-053",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 53
+    }
+  },
+  {
+    "name": "La Ligua",
+    "officialCode": "05401",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-054",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 54
+    }
+  },
+  {
+    "name": "Cabildo",
+    "officialCode": "05402",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-054",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 54
+    }
+  },
+  {
+    "name": "Papudo",
+    "officialCode": "05403",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-054",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 54
+    }
+  },
+  {
+    "name": "Petorca",
+    "officialCode": "05404",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-054",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 54
+    }
+  },
+  {
+    "name": "Zapallar",
+    "officialCode": "05405",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-054",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 54
+    }
+  },
+  {
+    "name": "Quillota",
+    "officialCode": "05501",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-055",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 55
+    }
+  },
+  {
+    "name": "Calera",
+    "officialCode": "05502",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-055",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 55
+    }
+  },
+  {
+    "name": "Hijuelas",
+    "officialCode": "05503",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-055",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 55
+    }
+  },
+  {
+    "name": "La Cruz",
+    "officialCode": "05504",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-055",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 55
+    }
+  },
+  {
+    "name": "Nogales",
+    "officialCode": "05506",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-055",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 55
+    }
+  },
+  {
+    "name": "San Antonio",
+    "officialCode": "05601",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-056",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 56
+    }
+  },
+  {
+    "name": "Algarrobo",
+    "officialCode": "05602",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-056",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 56
+    }
+  },
+  {
+    "name": "Cartagena",
+    "officialCode": "05603",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-056",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 56
+    }
+  },
+  {
+    "name": "El Quisco",
+    "officialCode": "05604",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-056",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 56
+    }
+  },
+  {
+    "name": "El Tabo",
+    "officialCode": "05605",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-056",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 56
+    }
+  },
+  {
+    "name": "Santo Domingo",
+    "officialCode": "05606",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-056",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 56
+    }
+  },
+  {
+    "name": "San Felipe",
+    "officialCode": "05701",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-057",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 57
+    }
+  },
+  {
+    "name": "Catemu",
+    "officialCode": "05702",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-057",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 57
+    }
+  },
+  {
+    "name": "Llaillay",
+    "officialCode": "05703",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-057",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 57
+    }
+  },
+  {
+    "name": "Panquehue",
+    "officialCode": "05704",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-057",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 57
+    }
+  },
+  {
+    "name": "Putaendo",
+    "officialCode": "05705",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-057",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 57
+    }
+  },
+  {
+    "name": "Santa María",
+    "officialCode": "05706",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-057",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 57
+    }
+  },
+  {
+    "name": "Quilpué",
+    "officialCode": "05801",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-058",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 58
+    }
+  },
+  {
+    "name": "Limache",
+    "officialCode": "05802",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-058",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 58
+    }
+  },
+  {
+    "name": "Olmué",
+    "officialCode": "05803",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-058",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 58
+    }
+  },
+  {
+    "name": "Villa Alemana",
+    "officialCode": "05804",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-058",
+    "metadata": {
+      "regionNumericCode": 5,
+      "provinceNumericCode": 58
+    }
+  },
+  {
+    "name": "Rancagua",
+    "officialCode": "06101",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-061",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 61
+    }
+  },
+  {
+    "name": "Codegua",
+    "officialCode": "06102",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-061",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 61
+    }
+  },
+  {
+    "name": "Coinco",
+    "officialCode": "06103",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-061",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 61
+    }
+  },
+  {
+    "name": "Coltauco",
+    "officialCode": "06104",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-061",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 61
+    }
+  },
+  {
+    "name": "Doñihue",
+    "officialCode": "06105",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-061",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 61
+    }
+  },
+  {
+    "name": "Graneros",
+    "officialCode": "06106",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-061",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 61
+    }
+  },
+  {
+    "name": "Las Cabras",
+    "officialCode": "06107",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-061",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 61
+    }
+  },
+  {
+    "name": "Machalí",
+    "officialCode": "06108",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-061",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 61
+    }
+  },
+  {
+    "name": "Malloa",
+    "officialCode": "06109",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-061",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 61
+    }
+  },
+  {
+    "name": "Mostazal",
+    "officialCode": "06110",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-061",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 61
+    }
+  },
+  {
+    "name": "Olivar",
+    "officialCode": "06111",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-061",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 61
+    }
+  },
+  {
+    "name": "Peumo",
+    "officialCode": "06112",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-061",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 61
+    }
+  },
+  {
+    "name": "Pichidegua",
+    "officialCode": "06113",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-061",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 61
+    }
+  },
+  {
+    "name": "Quinta de Tilcoco",
+    "officialCode": "06114",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-061",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 61
+    }
+  },
+  {
+    "name": "Rengo",
+    "officialCode": "06115",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-061",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 61
+    }
+  },
+  {
+    "name": "Requínoa",
+    "officialCode": "06116",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-061",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 61
+    }
+  },
+  {
+    "name": "San Vicente",
+    "officialCode": "06117",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-061",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 61
+    }
+  },
+  {
+    "name": "Pichilemu",
+    "officialCode": "06201",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-062",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 62
+    }
+  },
+  {
+    "name": "La Estrella",
+    "officialCode": "06202",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-062",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 62
+    }
+  },
+  {
+    "name": "Litueche",
+    "officialCode": "06203",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-062",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 62
+    }
+  },
+  {
+    "name": "Marchihue",
+    "officialCode": "06204",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-062",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 62
+    }
+  },
+  {
+    "name": "Navidad",
+    "officialCode": "06205",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-062",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 62
+    }
+  },
+  {
+    "name": "Paredones",
+    "officialCode": "06206",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-062",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 62
+    }
+  },
+  {
+    "name": "San Fernando",
+    "officialCode": "06301",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-063",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 63
+    }
+  },
+  {
+    "name": "Chépica",
+    "officialCode": "06302",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-063",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 63
+    }
+  },
+  {
+    "name": "Chimbarongo",
+    "officialCode": "06303",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-063",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 63
+    }
+  },
+  {
+    "name": "Lolol",
+    "officialCode": "06304",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-063",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 63
+    }
+  },
+  {
+    "name": "Nancagua",
+    "officialCode": "06305",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-063",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 63
+    }
+  },
+  {
+    "name": "Palmilla",
+    "officialCode": "06306",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-063",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 63
+    }
+  },
+  {
+    "name": "Peralillo",
+    "officialCode": "06307",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-063",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 63
+    }
+  },
+  {
+    "name": "Placilla",
+    "officialCode": "06308",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-063",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 63
+    }
+  },
+  {
+    "name": "Pumanque",
+    "officialCode": "06309",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-063",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 63
+    }
+  },
+  {
+    "name": "Santa Cruz",
+    "officialCode": "06310",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-063",
+    "metadata": {
+      "regionNumericCode": 6,
+      "provinceNumericCode": 63
+    }
+  },
+  {
+    "name": "Talca",
+    "officialCode": "07101",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-071",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 71
+    }
+  },
+  {
+    "name": "Constitución",
+    "officialCode": "07102",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-071",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 71
+    }
+  },
+  {
+    "name": "Curepto",
+    "officialCode": "07103",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-071",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 71
+    }
+  },
+  {
+    "name": "Empedrado",
+    "officialCode": "07104",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-071",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 71
+    }
+  },
+  {
+    "name": "Maule",
+    "officialCode": "07105",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-071",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 71
+    }
+  },
+  {
+    "name": "Pelarco",
+    "officialCode": "07106",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-071",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 71
+    }
+  },
+  {
+    "name": "Pencahue",
+    "officialCode": "07107",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-071",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 71
+    }
+  },
+  {
+    "name": "Río Claro",
+    "officialCode": "07108",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-071",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 71
+    }
+  },
+  {
+    "name": "San Clemente",
+    "officialCode": "07109",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-071",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 71
+    }
+  },
+  {
+    "name": "San Rafael",
+    "officialCode": "07110",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-071",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 71
+    }
+  },
+  {
+    "name": "Cauquenes",
+    "officialCode": "07201",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-072",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 72
+    }
+  },
+  {
+    "name": "Chanco",
+    "officialCode": "07202",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-072",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 72
+    }
+  },
+  {
+    "name": "Pelluhue",
+    "officialCode": "07203",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-072",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 72
+    }
+  },
+  {
+    "name": "Curicó",
+    "officialCode": "07301",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-073",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 73
+    }
+  },
+  {
+    "name": "Hualañé",
+    "officialCode": "07302",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-073",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 73
+    }
+  },
+  {
+    "name": "Licantén",
+    "officialCode": "07303",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-073",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 73
+    }
+  },
+  {
+    "name": "Molina",
+    "officialCode": "07304",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-073",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 73
+    }
+  },
+  {
+    "name": "Rauco",
+    "officialCode": "07305",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-073",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 73
+    }
+  },
+  {
+    "name": "Romeral",
+    "officialCode": "07306",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-073",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 73
+    }
+  },
+  {
+    "name": "Sagrada Familia",
+    "officialCode": "07307",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-073",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 73
+    }
+  },
+  {
+    "name": "Teno",
+    "officialCode": "07308",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-073",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 73
+    }
+  },
+  {
+    "name": "Vichuquén",
+    "officialCode": "07309",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-073",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 73
+    }
+  },
+  {
+    "name": "Linares",
+    "officialCode": "07401",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-074",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 74
+    }
+  },
+  {
+    "name": "Colbún",
+    "officialCode": "07402",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-074",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 74
+    }
+  },
+  {
+    "name": "Longaví",
+    "officialCode": "07403",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-074",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 74
+    }
+  },
+  {
+    "name": "Parral",
+    "officialCode": "07404",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-074",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 74
+    }
+  },
+  {
+    "name": "Retiro",
+    "officialCode": "07405",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-074",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 74
+    }
+  },
+  {
+    "name": "San Javier",
+    "officialCode": "07406",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-074",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 74
+    }
+  },
+  {
+    "name": "Villa Alegre",
+    "officialCode": "07407",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-074",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 74
+    }
+  },
+  {
+    "name": "Yerbas Buenas",
+    "officialCode": "07408",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-074",
+    "metadata": {
+      "regionNumericCode": 7,
+      "provinceNumericCode": 74
+    }
+  },
+  {
+    "name": "Concepción",
+    "officialCode": "08101",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-081",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 81
+    }
+  },
+  {
+    "name": "Coronel",
+    "officialCode": "08102",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-081",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 81
+    }
+  },
+  {
+    "name": "Chiguayante",
+    "officialCode": "08103",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-081",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 81
+    }
+  },
+  {
+    "name": "Florida",
+    "officialCode": "08104",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-081",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 81
+    }
+  },
+  {
+    "name": "Hualqui",
+    "officialCode": "08105",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-081",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 81
+    }
+  },
+  {
+    "name": "Lota",
+    "officialCode": "08106",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-081",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 81
+    }
+  },
+  {
+    "name": "Penco",
+    "officialCode": "08107",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-081",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 81
+    }
+  },
+  {
+    "name": "San Pedro de la Paz",
+    "officialCode": "08108",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-081",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 81
+    }
+  },
+  {
+    "name": "Santa Juana",
+    "officialCode": "08109",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-081",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 81
+    }
+  },
+  {
+    "name": "Talcahuano",
+    "officialCode": "08110",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-081",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 81
+    }
+  },
+  {
+    "name": "Tomé",
+    "officialCode": "08111",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-081",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 81
+    }
+  },
+  {
+    "name": "Hualpén",
+    "officialCode": "08112",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-081",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 81
+    }
+  },
+  {
+    "name": "Lebu",
+    "officialCode": "08201",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-082",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 82
+    }
+  },
+  {
+    "name": "Arauco",
+    "officialCode": "08202",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-082",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 82
+    }
+  },
+  {
+    "name": "Cañete",
+    "officialCode": "08203",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-082",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 82
+    }
+  },
+  {
+    "name": "Contulmo",
+    "officialCode": "08204",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-082",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 82
+    }
+  },
+  {
+    "name": "Curanilahue",
+    "officialCode": "08205",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-082",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 82
+    }
+  },
+  {
+    "name": "Los Alamos",
+    "officialCode": "08206",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-082",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 82
+    }
+  },
+  {
+    "name": "Tirúa",
+    "officialCode": "08207",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-082",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 82
+    }
+  },
+  {
+    "name": "Los Angeles",
+    "officialCode": "08301",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-083",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 83
+    }
+  },
+  {
+    "name": "Antuco",
+    "officialCode": "08302",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-083",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 83
+    }
+  },
+  {
+    "name": "Cabrero",
+    "officialCode": "08303",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-083",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 83
+    }
+  },
+  {
+    "name": "Laja",
+    "officialCode": "08304",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-083",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 83
+    }
+  },
+  {
+    "name": "Mulchén",
+    "officialCode": "08305",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-083",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 83
+    }
+  },
+  {
+    "name": "Nacimiento",
+    "officialCode": "08306",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-083",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 83
+    }
+  },
+  {
+    "name": "Negrete",
+    "officialCode": "08307",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-083",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 83
+    }
+  },
+  {
+    "name": "Quilaco",
+    "officialCode": "08308",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-083",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 83
+    }
+  },
+  {
+    "name": "Quilleco",
+    "officialCode": "08309",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-083",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 83
+    }
+  },
+  {
+    "name": "San Rosendo",
+    "officialCode": "08310",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-083",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 83
+    }
+  },
+  {
+    "name": "Santa Bárbara",
+    "officialCode": "08311",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-083",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 83
+    }
+  },
+  {
+    "name": "Tucapel",
+    "officialCode": "08312",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-083",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 83
+    }
+  },
+  {
+    "name": "Yumbel",
+    "officialCode": "08313",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-083",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 83
+    }
+  },
+  {
+    "name": "Alto Biobío",
+    "officialCode": "08314",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-083",
+    "metadata": {
+      "regionNumericCode": 8,
+      "provinceNumericCode": 83
+    }
+  },
+  {
+    "name": "Temuco",
+    "officialCode": "09101",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Carahue",
+    "officialCode": "09102",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Cunco",
+    "officialCode": "09103",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Curarrehue",
+    "officialCode": "09104",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Freire",
+    "officialCode": "09105",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Galvarino",
+    "officialCode": "09106",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Gorbea",
+    "officialCode": "09107",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Lautaro",
+    "officialCode": "09108",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Loncoche",
+    "officialCode": "09109",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Melipeuco",
+    "officialCode": "09110",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Nueva Imperial",
+    "officialCode": "09111",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Padre Las Casas",
+    "officialCode": "09112",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Perquenco",
+    "officialCode": "09113",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Pitrufquén",
+    "officialCode": "09114",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Pucón",
+    "officialCode": "09115",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Saavedra",
+    "officialCode": "09116",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Teodoro Schmidt",
+    "officialCode": "09117",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Toltén",
+    "officialCode": "09118",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Vilcún",
+    "officialCode": "09119",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Villarrica",
+    "officialCode": "09120",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Cholchol",
+    "officialCode": "09121",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-091",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 91
+    }
+  },
+  {
+    "name": "Angol",
+    "officialCode": "09201",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-092",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 92
+    }
+  },
+  {
+    "name": "Collipulli",
+    "officialCode": "09202",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-092",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 92
+    }
+  },
+  {
+    "name": "Curacautín",
+    "officialCode": "09203",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-092",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 92
+    }
+  },
+  {
+    "name": "Ercilla",
+    "officialCode": "09204",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-092",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 92
+    }
+  },
+  {
+    "name": "Lonquimay",
+    "officialCode": "09205",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-092",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 92
+    }
+  },
+  {
+    "name": "Los Sauces",
+    "officialCode": "09206",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-092",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 92
+    }
+  },
+  {
+    "name": "Lumaco",
+    "officialCode": "09207",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-092",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 92
+    }
+  },
+  {
+    "name": "Purén",
+    "officialCode": "09208",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-092",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 92
+    }
+  },
+  {
+    "name": "Renaico",
+    "officialCode": "09209",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-092",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 92
+    }
+  },
+  {
+    "name": "Traiguén",
+    "officialCode": "09210",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-092",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 92
+    }
+  },
+  {
+    "name": "Victoria",
+    "officialCode": "09211",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-092",
+    "metadata": {
+      "regionNumericCode": 9,
+      "provinceNumericCode": 92
+    }
+  },
+  {
+    "name": "Puerto Montt",
+    "officialCode": "10101",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-101",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 101
+    }
+  },
+  {
+    "name": "Calbuco",
+    "officialCode": "10102",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-101",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 101
+    }
+  },
+  {
+    "name": "Cochamó",
+    "officialCode": "10103",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-101",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 101
+    }
+  },
+  {
+    "name": "Fresia",
+    "officialCode": "10104",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-101",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 101
+    }
+  },
+  {
+    "name": "Frutillar",
+    "officialCode": "10105",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-101",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 101
+    }
+  },
+  {
+    "name": "Los Muermos",
+    "officialCode": "10106",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-101",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 101
+    }
+  },
+  {
+    "name": "Llanquihue",
+    "officialCode": "10107",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-101",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 101
+    }
+  },
+  {
+    "name": "Maullín",
+    "officialCode": "10108",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-101",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 101
+    }
+  },
+  {
+    "name": "Puerto Varas",
+    "officialCode": "10109",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-101",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 101
+    }
+  },
+  {
+    "name": "Castro",
+    "officialCode": "10201",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-102",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 102
+    }
+  },
+  {
+    "name": "Ancud",
+    "officialCode": "10202",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-102",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 102
+    }
+  },
+  {
+    "name": "Chonchi",
+    "officialCode": "10203",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-102",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 102
+    }
+  },
+  {
+    "name": "Curaco de Vélez",
+    "officialCode": "10204",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-102",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 102
+    }
+  },
+  {
+    "name": "Dalcahue",
+    "officialCode": "10205",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-102",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 102
+    }
+  },
+  {
+    "name": "Puqueldón",
+    "officialCode": "10206",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-102",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 102
+    }
+  },
+  {
+    "name": "Queilén",
+    "officialCode": "10207",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-102",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 102
+    }
+  },
+  {
+    "name": "Quellón",
+    "officialCode": "10208",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-102",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 102
+    }
+  },
+  {
+    "name": "Quemchi",
+    "officialCode": "10209",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-102",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 102
+    }
+  },
+  {
+    "name": "Quinchao",
+    "officialCode": "10210",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-102",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 102
+    }
+  },
+  {
+    "name": "Osorno",
+    "officialCode": "10301",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-103",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 103
+    }
+  },
+  {
+    "name": "Puerto Octay",
+    "officialCode": "10302",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-103",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 103
+    }
+  },
+  {
+    "name": "Purranque",
+    "officialCode": "10303",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-103",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 103
+    }
+  },
+  {
+    "name": "Puyehue",
+    "officialCode": "10304",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-103",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 103
+    }
+  },
+  {
+    "name": "Río Negro",
+    "officialCode": "10305",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-103",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 103
+    }
+  },
+  {
+    "name": "San Juan de la Costa",
+    "officialCode": "10306",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-103",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 103
+    }
+  },
+  {
+    "name": "San Pablo",
+    "officialCode": "10307",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-103",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 103
+    }
+  },
+  {
+    "name": "Chaitén",
+    "officialCode": "10401",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-104",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 104
+    }
+  },
+  {
+    "name": "Futaleufú",
+    "officialCode": "10402",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-104",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 104
+    }
+  },
+  {
+    "name": "Hualaihué",
+    "officialCode": "10403",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-104",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 104
+    }
+  },
+  {
+    "name": "Palena",
+    "officialCode": "10404",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-104",
+    "metadata": {
+      "regionNumericCode": 10,
+      "provinceNumericCode": 104
+    }
+  },
+  {
+    "name": "Coyhaique",
+    "officialCode": "11101",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-111",
+    "metadata": {
+      "regionNumericCode": 11,
+      "provinceNumericCode": 111
+    }
+  },
+  {
+    "name": "Lago Verde",
+    "officialCode": "11102",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-111",
+    "metadata": {
+      "regionNumericCode": 11,
+      "provinceNumericCode": 111
+    }
+  },
+  {
+    "name": "Aysén",
+    "officialCode": "11201",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-112",
+    "metadata": {
+      "regionNumericCode": 11,
+      "provinceNumericCode": 112
+    }
+  },
+  {
+    "name": "Cisnes",
+    "officialCode": "11202",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-112",
+    "metadata": {
+      "regionNumericCode": 11,
+      "provinceNumericCode": 112
+    }
+  },
+  {
+    "name": "Guaitecas",
+    "officialCode": "11203",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-112",
+    "metadata": {
+      "regionNumericCode": 11,
+      "provinceNumericCode": 112
+    }
+  },
+  {
+    "name": "Cochrane",
+    "officialCode": "11301",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-113",
+    "metadata": {
+      "regionNumericCode": 11,
+      "provinceNumericCode": 113
+    }
+  },
+  {
+    "name": "O'Higgins",
+    "officialCode": "11302",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-113",
+    "metadata": {
+      "regionNumericCode": 11,
+      "provinceNumericCode": 113
+    }
+  },
+  {
+    "name": "Tortel",
+    "officialCode": "11303",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-113",
+    "metadata": {
+      "regionNumericCode": 11,
+      "provinceNumericCode": 113
+    }
+  },
+  {
+    "name": "Chile Chico",
+    "officialCode": "11401",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-114",
+    "metadata": {
+      "regionNumericCode": 11,
+      "provinceNumericCode": 114
+    }
+  },
+  {
+    "name": "Río Ibáñez",
+    "officialCode": "11402",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-114",
+    "metadata": {
+      "regionNumericCode": 11,
+      "provinceNumericCode": 114
+    }
+  },
+  {
+    "name": "Punta Arenas",
+    "officialCode": "12101",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-121",
+    "metadata": {
+      "regionNumericCode": 12,
+      "provinceNumericCode": 121
+    }
+  },
+  {
+    "name": "Laguna Blanca",
+    "officialCode": "12102",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-121",
+    "metadata": {
+      "regionNumericCode": 12,
+      "provinceNumericCode": 121
+    }
+  },
+  {
+    "name": "Río Verde",
+    "officialCode": "12103",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-121",
+    "metadata": {
+      "regionNumericCode": 12,
+      "provinceNumericCode": 121
+    }
+  },
+  {
+    "name": "San Gregorio",
+    "officialCode": "12104",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-121",
+    "metadata": {
+      "regionNumericCode": 12,
+      "provinceNumericCode": 121
+    }
+  },
+  {
+    "name": "Cabo de Hornos",
+    "officialCode": "12201",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-122",
+    "metadata": {
+      "regionNumericCode": 12,
+      "provinceNumericCode": 122
+    }
+  },
+  {
+    "name": "Antártica",
+    "officialCode": "12202",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-122",
+    "metadata": {
+      "regionNumericCode": 12,
+      "provinceNumericCode": 122
+    }
+  },
+  {
+    "name": "Porvenir",
+    "officialCode": "12301",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-123",
+    "metadata": {
+      "regionNumericCode": 12,
+      "provinceNumericCode": 123
+    }
+  },
+  {
+    "name": "Primavera",
+    "officialCode": "12302",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-123",
+    "metadata": {
+      "regionNumericCode": 12,
+      "provinceNumericCode": 123
+    }
+  },
+  {
+    "name": "Timaukel",
+    "officialCode": "12303",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-123",
+    "metadata": {
+      "regionNumericCode": 12,
+      "provinceNumericCode": 123
+    }
+  },
+  {
+    "name": "Natales",
+    "officialCode": "12401",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-124",
+    "metadata": {
+      "regionNumericCode": 12,
+      "provinceNumericCode": 124
+    }
+  },
+  {
+    "name": "Torres del Paine",
+    "officialCode": "12402",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-124",
+    "metadata": {
+      "regionNumericCode": 12,
+      "provinceNumericCode": 124
+    }
+  },
+  {
+    "name": "Santiago",
+    "officialCode": "13101",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Cerrillos",
+    "officialCode": "13102",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Cerro Navia",
+    "officialCode": "13103",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Conchalí",
+    "officialCode": "13104",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "El Bosque",
+    "officialCode": "13105",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Estación Central",
+    "officialCode": "13106",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Huechuraba",
+    "officialCode": "13107",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Independencia",
+    "officialCode": "13108",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "La Cisterna",
+    "officialCode": "13109",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "La Florida",
+    "officialCode": "13110",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "La Granja",
+    "officialCode": "13111",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "La Pintana",
+    "officialCode": "13112",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "La Reina",
+    "officialCode": "13113",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Las Condes",
+    "officialCode": "13114",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Lo Barnechea",
+    "officialCode": "13115",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Lo Espejo",
+    "officialCode": "13116",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Lo Prado",
+    "officialCode": "13117",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Macul",
+    "officialCode": "13118",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Maipú",
+    "officialCode": "13119",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Ñuñoa",
+    "officialCode": "13120",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Pedro Aguirre Cerda",
+    "officialCode": "13121",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Peñalolén",
+    "officialCode": "13122",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Providencia",
+    "officialCode": "13123",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Pudahuel",
+    "officialCode": "13124",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Quilicura",
+    "officialCode": "13125",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Quinta Normal",
+    "officialCode": "13126",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Recoleta",
+    "officialCode": "13127",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Renca",
+    "officialCode": "13128",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "San Joaquín",
+    "officialCode": "13129",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "San Miguel",
+    "officialCode": "13130",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "San Ramón",
+    "officialCode": "13131",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Vitacura",
+    "officialCode": "13132",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-131",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 131
+    }
+  },
+  {
+    "name": "Puente Alto",
+    "officialCode": "13201",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-132",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 132
+    }
+  },
+  {
+    "name": "Pirque",
+    "officialCode": "13202",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-132",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 132
+    }
+  },
+  {
+    "name": "San José de Maipo",
+    "officialCode": "13203",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-132",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 132
+    }
+  },
+  {
+    "name": "Colina",
+    "officialCode": "13301",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-133",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 133
+    }
+  },
+  {
+    "name": "Lampa",
+    "officialCode": "13302",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-133",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 133
+    }
+  },
+  {
+    "name": "Tiltil",
+    "officialCode": "13303",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-133",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 133
+    }
+  },
+  {
+    "name": "San Bernardo",
+    "officialCode": "13401",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-134",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 134
+    }
+  },
+  {
+    "name": "Buin",
+    "officialCode": "13402",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-134",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 134
+    }
+  },
+  {
+    "name": "Calera de Tango",
+    "officialCode": "13403",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-134",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 134
+    }
+  },
+  {
+    "name": "Paine",
+    "officialCode": "13404",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-134",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 134
+    }
+  },
+  {
+    "name": "Melipilla",
+    "officialCode": "13501",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-135",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 135
+    }
+  },
+  {
+    "name": "Alhué",
+    "officialCode": "13502",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-135",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 135
+    }
+  },
+  {
+    "name": "Curacaví",
+    "officialCode": "13503",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-135",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 135
+    }
+  },
+  {
+    "name": "María Pinto",
+    "officialCode": "13504",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-135",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 135
+    }
+  },
+  {
+    "name": "San Pedro",
+    "officialCode": "13505",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-135",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 135
+    }
+  },
+  {
+    "name": "Talagante",
+    "officialCode": "13601",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-136",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 136
+    }
+  },
+  {
+    "name": "El Monte",
+    "officialCode": "13602",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-136",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 136
+    }
+  },
+  {
+    "name": "Isla de Maipo",
+    "officialCode": "13603",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-136",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 136
+    }
+  },
+  {
+    "name": "Padre Hurtado",
+    "officialCode": "13604",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-136",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 136
+    }
+  },
+  {
+    "name": "Peñaflor",
+    "officialCode": "13605",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-136",
+    "metadata": {
+      "regionNumericCode": 13,
+      "provinceNumericCode": 136
+    }
+  },
+  {
+    "name": "Valdivia",
+    "officialCode": "14101",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-141",
+    "metadata": {
+      "regionNumericCode": 14,
+      "provinceNumericCode": 141
+    }
+  },
+  {
+    "name": "Corral",
+    "officialCode": "14102",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-141",
+    "metadata": {
+      "regionNumericCode": 14,
+      "provinceNumericCode": 141
+    }
+  },
+  {
+    "name": "Lanco",
+    "officialCode": "14103",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-141",
+    "metadata": {
+      "regionNumericCode": 14,
+      "provinceNumericCode": 141
+    }
+  },
+  {
+    "name": "Los Lagos",
+    "officialCode": "14104",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-141",
+    "metadata": {
+      "regionNumericCode": 14,
+      "provinceNumericCode": 141
+    }
+  },
+  {
+    "name": "Máfil",
+    "officialCode": "14105",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-141",
+    "metadata": {
+      "regionNumericCode": 14,
+      "provinceNumericCode": 141
+    }
+  },
+  {
+    "name": "Mariquina",
+    "officialCode": "14106",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-141",
+    "metadata": {
+      "regionNumericCode": 14,
+      "provinceNumericCode": 141
+    }
+  },
+  {
+    "name": "Paillaco",
+    "officialCode": "14107",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-141",
+    "metadata": {
+      "regionNumericCode": 14,
+      "provinceNumericCode": 141
+    }
+  },
+  {
+    "name": "Panguipulli",
+    "officialCode": "14108",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-141",
+    "metadata": {
+      "regionNumericCode": 14,
+      "provinceNumericCode": 141
+    }
+  },
+  {
+    "name": "La Unión",
+    "officialCode": "14201",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-142",
+    "metadata": {
+      "regionNumericCode": 14,
+      "provinceNumericCode": 142
+    }
+  },
+  {
+    "name": "Futrono",
+    "officialCode": "14202",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-142",
+    "metadata": {
+      "regionNumericCode": 14,
+      "provinceNumericCode": 142
+    }
+  },
+  {
+    "name": "Lago Ranco",
+    "officialCode": "14203",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-142",
+    "metadata": {
+      "regionNumericCode": 14,
+      "provinceNumericCode": 142
+    }
+  },
+  {
+    "name": "Río Bueno",
+    "officialCode": "14204",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-142",
+    "metadata": {
+      "regionNumericCode": 14,
+      "provinceNumericCode": 142
+    }
+  },
+  {
+    "name": "Arica",
+    "officialCode": "15101",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-151",
+    "metadata": {
+      "regionNumericCode": 15,
+      "provinceNumericCode": 151
+    }
+  },
+  {
+    "name": "Camarones",
+    "officialCode": "15102",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-151",
+    "metadata": {
+      "regionNumericCode": 15,
+      "provinceNumericCode": 151
+    }
+  },
+  {
+    "name": "Putre",
+    "officialCode": "15201",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-152",
+    "metadata": {
+      "regionNumericCode": 15,
+      "provinceNumericCode": 152
+    }
+  },
+  {
+    "name": "General Lagos",
+    "officialCode": "15202",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-152",
+    "metadata": {
+      "regionNumericCode": 15,
+      "provinceNumericCode": 152
+    }
+  },
+  {
+    "name": "Chillán",
+    "officialCode": "16101",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-161",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 161
+    }
+  },
+  {
+    "name": "Bulnes",
+    "officialCode": "16102",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-161",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 161
+    }
+  },
+  {
+    "name": "Chillán Viejo",
+    "officialCode": "16103",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-161",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 161
+    }
+  },
+  {
+    "name": "El Carmen",
+    "officialCode": "16104",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-161",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 161
+    }
+  },
+  {
+    "name": "Pemuco",
+    "officialCode": "16105",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-161",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 161
+    }
+  },
+  {
+    "name": "Pinto",
+    "officialCode": "16106",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-161",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 161
+    }
+  },
+  {
+    "name": "Quillón",
+    "officialCode": "16107",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-161",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 161
+    }
+  },
+  {
+    "name": "San Ignacio",
+    "officialCode": "16108",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-161",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 161
+    }
+  },
+  {
+    "name": "Yungay",
+    "officialCode": "16109",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-161",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 161
+    }
+  },
+  {
+    "name": "Quirihue",
+    "officialCode": "16201",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-162",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 162
+    }
+  },
+  {
+    "name": "Cobquecura",
+    "officialCode": "16202",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-162",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 162
+    }
+  },
+  {
+    "name": "Coelemu",
+    "officialCode": "16203",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-162",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 162
+    }
+  },
+  {
+    "name": "Ninhue",
+    "officialCode": "16204",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-162",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 162
+    }
+  },
+  {
+    "name": "Portezuelo",
+    "officialCode": "16205",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-162",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 162
+    }
+  },
+  {
+    "name": "Ranquil",
+    "officialCode": "16206",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-162",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 162
+    }
+  },
+  {
+    "name": "Treguaco",
+    "officialCode": "16207",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-162",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 162
+    }
+  },
+  {
+    "name": "San Carlos",
+    "officialCode": "16301",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-163",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 163
+    }
+  },
+  {
+    "name": "Coihueco",
+    "officialCode": "16302",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-163",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 163
+    }
+  },
+  {
+    "name": "Ñiquén",
+    "officialCode": "16303",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-163",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 163
+    }
+  },
+  {
+    "name": "San Fabián",
+    "officialCode": "16304",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-163",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 163
+    }
+  },
+  {
+    "name": "San Nicolás",
+    "officialCode": "16305",
+    "countryIso2": "CL",
+    "subdivisionCode": "CL-PROV-163",
+    "metadata": {
+      "regionNumericCode": 16,
+      "provinceNumericCode": 163
+    }
+  }
+]

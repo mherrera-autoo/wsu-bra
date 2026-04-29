@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ERP.Shared\ERP.Shared.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Tax.Contracts\ERP.Modules.Tax.Contracts.csproj" />
+  </ItemGroup>
+</Project>

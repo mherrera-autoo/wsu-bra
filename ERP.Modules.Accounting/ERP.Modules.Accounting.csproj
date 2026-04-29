@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ERP.Shared\ERP.Shared.csproj" />
+    <ProjectReference Include="..\ERP.Documents.Contracts\ERP.Documents.Contracts.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Accounting.Contracts\ERP.Modules.Accounting.Contracts.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Integrations.Contracts\ERP.Modules.Integrations.Contracts.csproj" />
+    <ProjectReference Include="..\ERP.Modules.PharmaceuticalRegulatedInventory.Contracts\ERP.Modules.PharmaceuticalRegulatedInventory.Contracts.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Sales.Contracts\ERP.Modules.Sales.Contracts.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Purchasing.Contracts\ERP.Modules.Purchasing.Contracts.csproj" />
+  </ItemGroup>
+</Project>

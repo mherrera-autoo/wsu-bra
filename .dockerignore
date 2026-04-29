@@ -1,0 +1,51 @@
+# Docker ignore file for ERP.Api production builds
+
+# Local development files
+docker-compose.yml
+onboarding.http
+
+# Documentation
+*.md
+docs/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vs/
+.vscode/
+
+# Build artifacts
+bin/
+obj/
+
+# Test projects (not needed in production image)
+**/Tests/
+**/*.Tests/
+
+# GitHub
+.github/
+
+# Windows specific
+Thumbs.db
+Desktop.ini
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux specific
+*~
+
+# Node modules (if any)
+node_modules/
+
+# Logs
+*.log
+logs/
+
+# Environment files (if any)
+.env*
+*.env

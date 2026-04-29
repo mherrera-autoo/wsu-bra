@@ -1,0 +1,36 @@
+@ERP.EdgePublicApi_HostAddress = http://localhost:5116
+@EdgeApiKey = test-edge-api-key
+@EdgeNodeId = node-01
+@ReaderId = reader-01
+
+GET {{ERP.EdgePublicApi_HostAddress}}/health
+Accept: application/json
+
+###
+
+GET {{ERP.EdgePublicApi_HostAddress}}/api/v1/edge/orders/active?edgeNodeId={{EdgeNodeId}}&readerId={{ReaderId}}
+x-api-key: {{EdgeApiKey}}
+Accept: application/json
+
+###
+
+POST {{ERP.EdgePublicApi_HostAddress}}/api/v1/edge/events/batch
+x-api-key: {{EdgeApiKey}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "edgeNodeId": "{{EdgeNodeId}}",
+  "events": [
+    {
+      "eventId": "00000000-0000-0000-0000-000000000001",
+      "eventType": "InventoryMovementConfirmed",
+      "occurredAtUtc": "2026-01-01T12:00:00Z",
+      "epcHex": "303400000000000000000001",
+      "readerId": "{{ReaderId}}",
+      "orderId": "ORD-001"
+    }
+  ]
+}
+
+###

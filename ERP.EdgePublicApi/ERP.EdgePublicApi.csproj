@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.7" />
+    <PackageReference Include="Microsoft.OpenApi" Version="2.3.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ERP.Persistence\ERP.Persistence.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Rfid\ERP.Modules.Rfid.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Wsu\ERP.Modules.Wsu.csproj" />
+    <ProjectReference Include="..\ERP.Modules.Integrations.Contracts\ERP.Modules.Integrations.Contracts.csproj" />
+    <ProjectReference Include="..\ERP.Shared\ERP.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

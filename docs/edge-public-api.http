@@ -1,0 +1,103 @@
+@baseUrl = http://localhost:5116
+@apiKey = dev-edge-key-change-me
+@edgeNodeId = EDGE-PLANTA-01
+@idempotencyKey = 11111111-2222-3333-4444-555555555555
+@eventId = 8eec3498-f734-4d43-b5f6-f9661f3fc1f8
+
+### Health
+GET {{baseUrl}}/health
+
+### POST events batch (accepted)
+POST {{baseUrl}}/api/v1/edge/events/batch
+x-api-key: {{apiKey}}
+Idempotency-Key: {{idempotencyKey}}
+Content-Type: application/json
+
+{
+  "edgeNodeId": "{{edgeNodeId}}",
+  "sentAtUtc": "2026-04-21T18:20:00Z",
+  "events": [
+    {
+      "eventId": "{{eventId}}",
+      "eventType": "InventoryMovementConfirmed",
+      "schemaVersion": 1,
+      "occurredAtUtc": "2026-04-21T18:19:58Z",
+      "orderId": "ORD-EDGE-0001",
+      "epcHex": "3008abcd",
+      "movementType": "ENTER",
+      "fromZoneId": "ZonaLobby",
+      "toZoneId": "ZonaBodega",
+      "zoneId": "ZonaBodega",
+      "readerId": "RFID-GATE-01",
+      "antennaId": 1,
+      "rssi": -45,
+      "reason": null,
+      "metadata": {
+        "source": "edge-rfid",
+        "batch": "B-001"
+      }
+    }
+  ]
+}
+
+### POST events batch (idempotent replay with same eventId)
+POST {{baseUrl}}/api/v1/edge/events/batch
+x-api-key: {{apiKey}}
+Idempotency-Key: {{idempotencyKey}}
+Content-Type: application/json
+
+{
+  "edgeNodeId": "{{edgeNodeId}}",
+  "sentAtUtc": "2026-04-21T18:20:05Z",
+  "events": [
+    {
+      "eventId": "{{eventId}}",
+      "eventType": "InventoryMovementConfirmed",
+      "schemaVersion": 1,
+      "occurredAtUtc": "2026-04-21T18:19:58Z",
+      "orderId": "ORD-EDGE-0001",
+      "epcHex": "3008abcd",
+      "readerId": "RFID-GATE-01"
+    }
+  ]
+}
+
+### POST events batch (invalid item -> rejected in results)
+POST {{baseUrl}}/api/v1/edge/events/batch
+x-api-key: {{apiKey}}
+Content-Type: application/json
+
+{
+  "edgeNodeId": "{{edgeNodeId}}",
+  "sentAtUtc": "2026-04-21T18:21:00Z",
+  "events": [
+    {
+      "eventId": "a1b6fa6d-8d72-4b37-b265-04113f2d8c17",
+      "eventType": "InventoryMovementConfirmed",
+      "schemaVersion": 1,
+      "occurredAtUtc": "2026-04-21T18:20:59Z",
+      "orderId": null,
+      "epcHex": "3008abcd",
+      "readerId": "RFID-GATE-01"
+    }
+  ]
+}
+
+### GET active orders
+GET {{baseUrl}}/api/v1/edge/orders/active?edgeNodeId={{edgeNodeId}}&readerId=RFID-GATE-01
+x-api-key: {{apiKey}}
+
+### GET active orders (If-None-Match)
+# Replace the value with the ETag returned by the previous request.
+GET {{baseUrl}}/api/v1/edge/orders/active?edgeNodeId={{edgeNodeId}}&readerId=RFID-GATE-01
+x-api-key: {{apiKey}}
+If-None-Match: "replace-with-etag"
+
+### GET ready orders (operational RFID)
+GET {{baseUrl}}/api/v1/edge/orders/ready?edgeNodeId={{edgeNodeId}}
+x-api-key: {{apiKey}}
+
+### GET ready orders (If-None-Match)
+GET {{baseUrl}}/api/v1/edge/orders/ready?edgeNodeId={{edgeNodeId}}
+x-api-key: {{apiKey}}
+If-None-Match: "replace-with-etag"
