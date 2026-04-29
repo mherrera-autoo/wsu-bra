@@ -1,14 +1,11 @@
 using ERP.Modules.Accounting.Application.Repositories;
-using ERP.Modules.Finance.Application.Repositories;
 using Microsoft.EntityFrameworkCore;
 using AccountingAccountsReceivable = ERP.Modules.Accounting.Domain.AccountsReceivable;
-using FinanceAccountsReceivable = ERP.Modules.Finance.Domain.AccountsReceivable;
 using AccountingAccountsReceivableRepository = ERP.Modules.Accounting.Application.Repositories.IAccountsReceivableRepository;
-using FinanceAccountsReceivableRepository = ERP.Modules.Finance.Application.Repositories.IAccountsReceivableRepository;
 
 namespace ERP.Persistence.Repositories;
 
-public sealed class AccountsReceivableRepository : AccountingAccountsReceivableRepository, FinanceAccountsReceivableRepository
+public sealed class AccountsReceivableRepository : AccountingAccountsReceivableRepository
 {
     private readonly ErpDbContext _dbContext;
 
@@ -36,16 +33,4 @@ public sealed class AccountsReceivableRepository : AccountingAccountsReceivableR
         return receivables;
     }
 
-    async Task FinanceAccountsReceivableRepository.AddAsync(
-        FinanceAccountsReceivable receivable,
-        CancellationToken cancellationToken)
-    {
-        await _dbContext.AccountsReceivables.AddAsync(receivable, cancellationToken);
-    }
-
-    Task<FinanceAccountsReceivable?> FinanceAccountsReceivableRepository.GetByIdAsync(
-        long id,
-        CancellationToken cancellationToken)
-        => _dbContext.AccountsReceivables
-            .FirstOrDefaultAsync(r => r.Id == id, cancellationToken);
 }

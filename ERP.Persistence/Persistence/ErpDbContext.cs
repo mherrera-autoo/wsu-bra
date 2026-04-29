@@ -4,13 +4,10 @@ using ERP.Modules.Accounting.Domain;
 using ERP.Modules.Billing.Domain;
 using ERP.Modules.Cash.Domain;
 using ERP.Documents.Domain;
-using ERP.Modules.Finance.Domain;
-using ERP.Modules.FixedAssets.Domain;
 using ERP.Modules.Identity.Domain;
 using ERP.Modules.Integrations.Contracts;
 using ERP.Modules.Inventory.Domain;
 using ERP.Modules.MasterData.Domain;
-using ERP.Modules.PharmaceuticalRegulatedInventory.Domain;
 using ERP.Modules.Pricing.Domain;
 using ERP.Modules.Purchasing.Domain;
 using ERP.Modules.Sales.Domain;
@@ -34,8 +31,6 @@ using AccountingAccountsPayable = ERP.Modules.Accounting.Domain.AccountsPayable;
 using AccountingAccountsReceivable = ERP.Modules.Accounting.Domain.AccountsReceivable;
 using AccountingPayableSchedule = ERP.Modules.Accounting.Domain.PayableSchedule;
 using AccountingReceivableSchedule = ERP.Modules.Accounting.Domain.ReceivableSchedule;
-using FinanceAccountsPayable = ERP.Modules.Finance.Domain.AccountsPayable;
-using FinanceAccountsReceivable = ERP.Modules.Finance.Domain.AccountsReceivable;
 
 namespace ERP.Persistence;
 
@@ -116,8 +111,6 @@ public class ErpDbContext : DbContext
     public DbSet<AccountingReceivableSchedule> AccountingReceivableSchedules => Set<AccountingReceivableSchedule>();
     public DbSet<AccountingAccountsPayable> AccountingAccountsPayables => Set<AccountingAccountsPayable>();
     public DbSet<AccountingPayableSchedule> AccountingPayableSchedules => Set<AccountingPayableSchedule>();
-    public DbSet<FinanceAccountsReceivable> AccountsReceivables => Set<FinanceAccountsReceivable>();
-    public DbSet<FinanceAccountsPayable> AccountsPayables => Set<FinanceAccountsPayable>();
     public DbSet<UserProfile> UserProfiles => Set<UserProfile>();
     public DbSet<OutboxMessage> OutboxMessages => Set<OutboxMessage>();
     public DbSet<User> Users => Set<User>();
@@ -137,33 +130,9 @@ public class ErpDbContext : DbContext
     public DbSet<CompanyFeature> CompanyFeatures => Set<CompanyFeature>();
     public DbSet<CompanyFeatureAudit> CompanyFeatureAudits => Set<CompanyFeatureAudit>();
     public DbSet<FeatureCatalog> FeatureCatalog => Set<FeatureCatalog>();
-    public DbSet<PharmaProductProfile> PharmaProductProfiles => Set<PharmaProductProfile>();
-    public DbSet<ProductPharmaInfo> ProductPharmaInfos => Set<ProductPharmaInfo>();
-    public DbSet<StockBatch> StockBatches => Set<StockBatch>();
     public DbSet<WarehouseLocation> WarehouseLocations => Set<WarehouseLocation>();
     public DbSet<WarehouseOperation> WarehouseOperations => Set<WarehouseOperation>();
     public DbSet<DispatchConfirmation> DispatchConfirmations => Set<DispatchConfirmation>();
-    public DbSet<StockLedgerEntry> StockLedgerEntries => Set<StockLedgerEntry>();
-    public DbSet<QuarantineHold> QuarantineHolds => Set<QuarantineHold>();
-    public DbSet<BlockHold> BlockHolds => Set<BlockHold>();
-    public DbSet<Recall> Recalls => Set<Recall>();
-    public DbSet<Waste> Wastes => Set<Waste>();
-    public DbSet<MovementBatchAllocation> MovementBatchAllocations => Set<MovementBatchAllocation>();
-    public DbSet<PharmacyTraceEvent> PharmacyTraceEvents => Set<PharmacyTraceEvent>();
-    public DbSet<Dispense> Dispenses => Set<Dispense>();
-    public DbSet<DispenseLine> DispenseLines => Set<DispenseLine>();
-    public DbSet<Prescription> Prescriptions => Set<Prescription>();
-    public DbSet<PrescriptionItem> PrescriptionItems => Set<PrescriptionItem>();
-    public DbSet<OfficialControlledBookEntry> OfficialControlledBookEntries => Set<OfficialControlledBookEntry>();
-    public DbSet<ControlledSubstanceLedger> ControlledSubstanceLedgers => Set<ControlledSubstanceLedger>();
-    public DbSet<ControlledSubstanceLedgerAudit> ControlledSubstanceLedgerAudits => Set<ControlledSubstanceLedgerAudit>();
-    public DbSet<ControlledSubstanceReportExport> ControlledSubstanceReportExports => Set<ControlledSubstanceReportExport>();
-    public DbSet<PharmacyCriticalAudit> PharmacyCriticalAudits => Set<PharmacyCriticalAudit>();
-    public DbSet<ExpirationAlertRule> ExpirationAlertRules => Set<ExpirationAlertRule>();
-    public DbSet<StockoutThreshold> StockoutThresholds => Set<StockoutThreshold>();
-    public DbSet<PurchaseInvoiceIngestion> PurchaseInvoiceIngestions => Set<PurchaseInvoiceIngestion>();
-    public DbSet<PurchaseInvoiceIngestionLine> PurchaseInvoiceIngestionLines => Set<PurchaseInvoiceIngestionLine>();
-    public DbSet<DeliveryConfirmation> DeliveryConfirmations => Set<DeliveryConfirmation>();
     public DbSet<Plan> Plans => Set<Plan>();
     public DbSet<PlanFeature> PlanFeatures => Set<PlanFeature>();
     public DbSet<Subscription> Subscriptions => Set<Subscription>();
@@ -177,10 +146,6 @@ public class ErpDbContext : DbContext
     public DbSet<WorkflowInstance> WorkflowInstances => Set<WorkflowInstance>();
     public DbSet<WorkflowTask> WorkflowTasks => Set<WorkflowTask>();
     public DbSet<WorkflowHistory> WorkflowHistories => Set<WorkflowHistory>();
-    public DbSet<AssetCategory> AssetCategories => Set<AssetCategory>();
-    public DbSet<FixedAsset> FixedAssets => Set<FixedAsset>();
-    public DbSet<DepreciationSchedule> DepreciationSchedules => Set<DepreciationSchedule>();
-    public DbSet<DepreciationScheduleLine> DepreciationScheduleLines => Set<DepreciationScheduleLine>();
     public DbSet<RfidTag> RfidTags => Set<RfidTag>();
     public DbSet<RfidEventInbox> RfidEventInboxes => Set<RfidEventInbox>();
     public DbSet<EdgeBusinessEvent> EdgeBusinessEvents => Set<EdgeBusinessEvent>();
@@ -210,7 +175,6 @@ public class ErpDbContext : DbContext
         ConfigureBilling(modelBuilder);
         ConfigureTax(modelBuilder);
         ConfigureAccounting(modelBuilder);
-        ConfigureFinance(modelBuilder);
         ConfigureCash(modelBuilder);
         ConfigureDocuments(modelBuilder);
         ConfigureUsers(modelBuilder);
@@ -220,13 +184,10 @@ public class ErpDbContext : DbContext
         ConfigureAudit(modelBuilder);
         ConfigureCompanyFeatures(modelBuilder);
         ConfigureSubscriptions(modelBuilder);
-        ConfigureFixedAssets(modelBuilder);
-        ConfigurePharmacy(modelBuilder);
         ConfigureWms(modelBuilder);
         ConfigureWorkflows(modelBuilder);
         ConfigureRfid(modelBuilder);
         ConfigureWsu(modelBuilder);
-        EnsurePharmaSchemaMappings(modelBuilder);
         EnsureWmsSchemaMappings(modelBuilder);
         EnsureRfidSchemaMappings(modelBuilder);
         EnsureWsuSchemaMappings(modelBuilder);
@@ -832,72 +793,6 @@ public class ErpDbContext : DbContext
             entity.Property(usage => usage.Quantity).IsRequired();
             entity.Property(usage => usage.RecordedAt).IsRequired();
             entity.HasIndex(usage => new { usage.SubscriptionId, usage.RecordedAt });
-        });
-    }
-
-    private static void ConfigureFixedAssets(ModelBuilder modelBuilder)
-    {
-        modelBuilder.Entity<AssetCategory>(entity =>
-        {
-            entity.ToTable("AssetCategories");
-            entity.HasKey(category => category.Id);
-            entity.Property(category => category.Name).IsRequired().HasMaxLength(256);
-            entity.Property(category => category.UsefulLifeMonths).IsRequired();
-            entity.Property(category => category.AssetAccountId).IsRequired();
-            entity.Property(category => category.AccumulatedDepreciationAccountId).IsRequired();
-            entity.Property(category => category.DepreciationExpenseAccountId).IsRequired();
-            entity.Property(category => category.DepreciationMethod).IsRequired();
-            entity.HasIndex(category => new { category.CompanyId, category.Name }).IsUnique();
-            ConfigureCompanyReference(entity);
-        });
-
-        modelBuilder.Entity<FixedAsset>(entity =>
-        {
-            entity.ToTable("FixedAssets");
-            entity.HasKey(asset => asset.Id);
-            entity.Property(asset => asset.Name).IsRequired().HasMaxLength(256);
-            entity.Property(asset => asset.AcquisitionDate).IsRequired();
-            entity.Property(asset => asset.Cost).HasPrecision(18, 2);
-            entity.Property(asset => asset.SalvageValue).HasPrecision(18, 2);
-            entity.Property(asset => asset.UsefulLifeMonths).IsRequired();
-            entity.Property(asset => asset.Status).IsRequired();
-            entity.HasIndex(asset => new { asset.CompanyId, asset.Status });
-            entity.HasOne<AssetCategory>()
-                .WithMany()
-                .HasForeignKey(asset => asset.CategoryId)
-                .OnDelete(DeleteBehavior.Restrict);
-            ConfigureCompanyReference(entity);
-        });
-
-        modelBuilder.Entity<DepreciationSchedule>(entity =>
-        {
-            entity.ToTable("DepreciationSchedules");
-            entity.HasKey(schedule => schedule.Id);
-            entity.Property(schedule => schedule.Method).IsRequired();
-            entity.Property(schedule => schedule.StartDate).IsRequired();
-            entity.Property(schedule => schedule.UsefulLifeMonths).IsRequired();
-            entity.Property(schedule => schedule.TotalDepreciableAmount).HasPrecision(18, 2);
-            entity.HasIndex(schedule => new { schedule.CompanyId, schedule.FixedAssetId }).IsUnique();
-            entity.HasOne<FixedAsset>()
-                .WithMany()
-                .HasForeignKey(schedule => schedule.FixedAssetId)
-                .OnDelete(DeleteBehavior.Cascade);
-            entity.HasMany(schedule => schedule.Lines)
-                .WithOne()
-                .HasForeignKey(line => line.DepreciationScheduleId)
-                .OnDelete(DeleteBehavior.Cascade);
-            ConfigureCompanyReference(entity);
-        });
-
-        modelBuilder.Entity<DepreciationScheduleLine>(entity =>
-        {
-            entity.ToTable("DepreciationScheduleLines");
-            entity.HasKey(line => line.Id);
-            entity.Property(line => line.PeriodDate).IsRequired();
-            entity.Property(line => line.Amount).HasPrecision(18, 2);
-            entity.Property(line => line.IsPosted).IsRequired();
-            entity.HasIndex(line => line.DepreciationScheduleId);
-            ConfigureCompanyReference(entity);
         });
     }
 

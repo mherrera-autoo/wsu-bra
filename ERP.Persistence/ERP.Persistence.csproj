@@ -19,14 +19,11 @@
     <ProjectReference Include="..\ERP.Modules.Billing\ERP.Modules.Billing.csproj" />
     <ProjectReference Include="..\ERP.Modules.Cash\ERP.Modules.Cash.csproj" />
     <ProjectReference Include="..\ERP.Documents\ERP.Documents.csproj" />
-    <ProjectReference Include="..\ERP.Modules.Finance\ERP.Modules.Finance.csproj" />
-    <ProjectReference Include="..\ERP.Modules.FixedAssets\ERP.Modules.FixedAssets.csproj" />
     <ProjectReference Include="..\ERP.Modules.Identity\ERP.Modules.Identity.csproj" />
     <ProjectReference Include="..\ERP.Modules.Integrations.Contracts\ERP.Modules.Integrations.Contracts.csproj" />
     <ProjectReference Include="..\ERP.Modules.Inventory\ERP.Modules.Inventory.csproj" />
     <ProjectReference Include="..\ERP.Modules.MasterData\ERP.Modules.MasterData.csproj" />
     <ProjectReference Include="..\ERP.Modules.MasterData.Contracts\ERP.Modules.MasterData.Contracts.csproj" />
-    <ProjectReference Include="..\ERP.Modules.PharmaceuticalRegulatedInventory\ERP.Modules.PharmaceuticalRegulatedInventory.csproj" />
     <ProjectReference Include="..\ERP.Modules.Wms\ERP.Modules.Wms.csproj" />
     <ProjectReference Include="..\ERP.Modules.Pricing\ERP.Modules.Pricing.csproj" />
     <ProjectReference Include="..\ERP.Modules.Purchasing\ERP.Modules.Purchasing.csproj" />

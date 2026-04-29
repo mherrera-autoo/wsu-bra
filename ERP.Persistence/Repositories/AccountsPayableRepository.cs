@@ -1,14 +1,11 @@
 using ERP.Modules.Accounting.Application.Repositories;
-using ERP.Modules.Finance.Application.Repositories;
 using Microsoft.EntityFrameworkCore;
 using AccountingAccountsPayable = ERP.Modules.Accounting.Domain.AccountsPayable;
-using FinanceAccountsPayable = ERP.Modules.Finance.Domain.AccountsPayable;
 using AccountingAccountsPayableRepository = ERP.Modules.Accounting.Application.Repositories.IAccountsPayableRepository;
-using FinanceAccountsPayableRepository = ERP.Modules.Finance.Application.Repositories.IAccountsPayableRepository;
 
 namespace ERP.Persistence.Repositories;
 
-public sealed class AccountsPayableRepository : AccountingAccountsPayableRepository, FinanceAccountsPayableRepository
+public sealed class AccountsPayableRepository : AccountingAccountsPayableRepository
 {
     private readonly ErpDbContext _dbContext;
 
@@ -33,18 +30,4 @@ public sealed class AccountsPayableRepository : AccountingAccountsPayableReposit
             .FirstOrDefaultAsync(ap => ap.Id == id, cancellationToken);
     }
 
-    async Task FinanceAccountsPayableRepository.AddAsync(
-        FinanceAccountsPayable payable,
-        CancellationToken cancellationToken)
-    {
-        await _dbContext.AccountsPayables.AddAsync(payable, cancellationToken);
-    }
-
-    Task<FinanceAccountsPayable?> FinanceAccountsPayableRepository.GetByIdAsync(
-        long id,
-        CancellationToken cancellationToken)
-    {
-        return _dbContext.AccountsPayables
-            .FirstOrDefaultAsync(ap => ap.Id == id, cancellationToken);
-    }
 }
