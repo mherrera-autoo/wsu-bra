@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Text.Json;
-using ERP.Modules.Accounting.Domain;
 using ERP.Modules.Billing.Domain;
 using ERP.Modules.Cash.Domain;
 using ERP.Documents.Domain;
@@ -27,10 +26,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NpgsqlTypes;
-using AccountingAccountsPayable = ERP.Modules.Accounting.Domain.AccountsPayable;
-using AccountingAccountsReceivable = ERP.Modules.Accounting.Domain.AccountsReceivable;
-using AccountingPayableSchedule = ERP.Modules.Accounting.Domain.PayableSchedule;
-using AccountingReceivableSchedule = ERP.Modules.Accounting.Domain.ReceivableSchedule;
 
 namespace ERP.Persistence;
 
@@ -81,20 +76,9 @@ public class ErpDbContext : DbContext
     public DbSet<SalesDocumentLine> SalesDocumentLines => Set<SalesDocumentLine>();
     public DbSet<SalesQuote> SalesQuotes => Set<SalesQuote>();
     public DbSet<SalesQuoteLine> SalesQuoteLines => Set<SalesQuoteLine>();
-    public DbSet<Account> Accounts => Set<Account>();
-    public DbSet<AccountingAccountTemplate> AccountingAccountTemplates => Set<AccountingAccountTemplate>();
-    public DbSet<Journal> Journals => Set<Journal>();
-    public DbSet<AccountingPeriod> AccountingPeriods => Set<AccountingPeriod>();
-    public DbSet<CompanyAccountingSettings> CompanyAccountingSettings => Set<CompanyAccountingSettings>();
-    public DbSet<JournalEntry> JournalEntries => Set<JournalEntry>();
-    public DbSet<JournalEntryLine> JournalEntryLines => Set<JournalEntryLine>();
-    public DbSet<DteDocument> DteDocuments => Set<DteDocument>();
     public DbSet<Document> Documents => Set<Document>();
     public DbSet<DocumentVersion> DocumentVersions => Set<DocumentVersion>();
     public DbSet<DocumentLink> DocumentLinks => Set<DocumentLink>();
-    public DbSet<TaxBookEntry> TaxBookEntries => Set<TaxBookEntry>();
-    public DbSet<TaxDeclaration> TaxDeclarations => Set<TaxDeclaration>();
-    public DbSet<AccountingAutomationRule> AccountingAutomationRules => Set<AccountingAutomationRule>();
     public DbSet<BankAccount> BankAccounts => Set<BankAccount>();
     public DbSet<BankStatement> BankStatements => Set<BankStatement>();
     public DbSet<BankTransaction> BankTransactions => Set<BankTransaction>();
@@ -107,10 +91,6 @@ public class ErpDbContext : DbContext
     public DbSet<Tax> Taxes => Set<Tax>();
     public DbSet<TaxGroup> TaxGroups => Set<TaxGroup>();
     public DbSet<TaxRule> TaxRules => Set<TaxRule>();
-    public DbSet<AccountingAccountsReceivable> AccountingAccountsReceivables => Set<AccountingAccountsReceivable>();
-    public DbSet<AccountingReceivableSchedule> AccountingReceivableSchedules => Set<AccountingReceivableSchedule>();
-    public DbSet<AccountingAccountsPayable> AccountingAccountsPayables => Set<AccountingAccountsPayable>();
-    public DbSet<AccountingPayableSchedule> AccountingPayableSchedules => Set<AccountingPayableSchedule>();
     public DbSet<UserProfile> UserProfiles => Set<UserProfile>();
     public DbSet<OutboxMessage> OutboxMessages => Set<OutboxMessage>();
     public DbSet<User> Users => Set<User>();
@@ -174,7 +154,6 @@ public class ErpDbContext : DbContext
         ConfigureSales(modelBuilder);
         ConfigureBilling(modelBuilder);
         ConfigureTax(modelBuilder);
-        ConfigureAccounting(modelBuilder);
         ConfigureCash(modelBuilder);
         ConfigureDocuments(modelBuilder);
         ConfigureUsers(modelBuilder);
@@ -184,7 +163,6 @@ public class ErpDbContext : DbContext
         ConfigureAudit(modelBuilder);
         ConfigureCompanyFeatures(modelBuilder);
         ConfigureSubscriptions(modelBuilder);
-        ConfigureWms(modelBuilder);
         ConfigureWorkflows(modelBuilder);
         ConfigureRfid(modelBuilder);
         ConfigureWsu(modelBuilder);
@@ -1146,241 +1124,6 @@ public class ErpDbContext : DbContext
                 .WithMany()
                 .HasForeignKey(r => r.TaxId)
                 .OnDelete(DeleteBehavior.Restrict);
-            ConfigureCompanyReference(entity);
-        });
-    }
-
-    private static void ConfigureAccounting(ModelBuilder modelBuilder)
-    {
-        modelBuilder.Entity<Account>(entity =>
-        {
-            entity.ToTable("CompanyChartOfAccounts");
-            entity.HasKey(e => e.Id);
-            entity.Property(e => e.TemplateId);
-            entity.Property(e => e.Code).HasMaxLength(64).IsRequired();
-            entity.Property(e => e.Name).HasMaxLength(256).IsRequired();
-            entity.Property(e => e.AccountType).HasConversion<string>().IsRequired();
-            entity.Property(e => e.ParentId);
-            entity.Property(e => e.IsSystemRequired).HasDefaultValue(false);
-            entity.Property(e => e.IsLocked).HasDefaultValue(false);
-            entity.Property(e => e.SortOrder).HasDefaultValue(0);
-            entity.Property(e => e.IsPostable).HasDefaultValue(true).IsRequired();
-            entity.Property(e => e.CurrencyCode).HasMaxLength(3);
-            entity.Property(e => e.IsActive).HasDefaultValue(true).IsRequired();
-            entity.Property(e => e.SystemRole);
-            entity.Property(e => e.SourceTemplateAccountPublicId);
-            entity.HasIndex(e => new { e.CompanyId, e.Code }).IsUnique();
-            entity.HasIndex(e => new { e.CompanyId, e.ParentId });
-            entity.HasIndex(e => new { e.CompanyId, e.AccountType });
-            entity.HasIndex(e => new { e.CompanyId, e.SystemRole })
-                .IsUnique()
-                .HasFilter("\"SystemRole\" IS NOT NULL");
-            ConfigureCompanyReference(entity);
-        });
-
-        modelBuilder.Entity<AccountingAccountTemplate>(entity =>
-        {
-            entity.ToTable("ChartOfAccountsTemplates", "masterdata");
-            entity.HasKey(e => e.Id);
-            entity.Property(e => e.Code).HasMaxLength(64).IsRequired();
-            entity.Property(e => e.Name).HasMaxLength(256).IsRequired();
-            entity.Property(e => e.AccountType).HasConversion<string>().IsRequired();
-            entity.Property(e => e.ParentId);
-            entity.Property(e => e.IsSystemRequired).HasDefaultValue(false);
-            entity.Property(e => e.IsActive).HasDefaultValue(true);
-            entity.Property(e => e.SortOrder).HasDefaultValue(0);
-            entity.Property(e => e.Version).HasMaxLength(64).IsRequired();
-            entity.Property(e => e.SystemRole);
-            entity.HasIndex(e => new { e.Version, e.Code }).IsUnique();
-            entity.HasIndex(e => new { e.Version, e.SystemRole })
-                .IsUnique()
-                .HasFilter("\"SystemRole\" IS NOT NULL");
-        });
-
-        modelBuilder.Entity<Journal>(entity =>
-        {
-            entity.ToTable("Journals");
-            entity.HasKey(e => e.Id);
-            entity.Property(e => e.Code).HasMaxLength(32).IsRequired();
-            entity.Property(e => e.Name).HasMaxLength(256).IsRequired();
-            entity.Property(e => e.IsActive).IsRequired();
-            entity.HasIndex(e => new { e.CompanyId, e.Code }).IsUnique();
-            ConfigureCompanyReference(entity);
-        });
-
-        modelBuilder.Entity<AccountingPeriod>(entity =>
-        {
-            entity.ToTable("AccountingPeriods");
-            entity.HasKey(e => e.Id);
-            entity.Property(e => e.Year).IsRequired();
-            entity.Property(e => e.Month).IsRequired();
-            entity.Property(e => e.Status).HasConversion<string>().IsRequired();
-            entity.HasIndex(e => new { e.CompanyId, e.Year, e.Month }).IsUnique();
-            ConfigureCompanyReference(entity);
-        });
-
-        modelBuilder.Entity<CompanyAccountingSettings>(entity =>
-        {
-            entity.ToTable("CompanyAccountingSettings");
-            entity.HasKey(e => e.CompanyId);
-            entity.Property(e => e.BaseCurrencyCode).HasMaxLength(3).IsRequired();
-            ConfigureCompanyReference(entity);
-        });
-
-        modelBuilder.Entity<JournalEntry>(entity =>
-        {
-            entity.ToTable("JournalEntries");
-            entity.HasKey(e => e.Id);
-            entity.Property(e => e.EntryDate).IsRequired();
-            entity.Property(e => e.PostingDate).IsRequired();
-            entity.Property(e => e.Status).HasConversion<string>().IsRequired();
-            entity.Property(e => e.SourceModule).HasMaxLength(64).IsRequired();
-            entity.Property(e => e.SourceDocumentId).HasMaxLength(128).IsRequired();
-            entity.Property(e => e.SourceDocumentType).HasMaxLength(64).IsRequired();
-            entity.Property(e => e.Description).HasMaxLength(512);
-            entity.HasMany(e => e.Lines)
-                .WithOne()
-                .HasForeignKey(l => l.JournalEntryId)
-                .OnDelete(DeleteBehavior.Cascade);
-            entity.HasIndex(e => new { e.CompanyId, e.SourceModule, e.SourceDocumentId, e.SourceDocumentType })
-                .IsUnique();
-            ConfigureCompanyReference(entity);
-        });
-
-        modelBuilder.Entity<JournalEntryLine>(entity =>
-        {
-            entity.ToTable("JournalEntryLines");
-            entity.HasKey(e => e.Id);
-            entity.Property(e => e.Debit).HasPrecision(18, 2);
-            entity.Property(e => e.Credit).HasPrecision(18, 2);
-            entity.Property(e => e.CurrencyCode).HasMaxLength(3).IsRequired();
-            entity.Property(e => e.FxRate).HasPrecision(18, 6);
-            entity.Property(e => e.AmountInBaseCurrency).HasPrecision(18, 2);
-            ConfigureCompanyReference(entity);
-        });
-
-        modelBuilder.Entity<DteDocument>(entity =>
-        {
-            entity.ToTable("DteDocuments");
-            entity.HasKey(e => e.Id);
-            entity.Property(e => e.Folio).HasMaxLength(64).IsRequired();
-            entity.Property(e => e.DocumentType).HasConversion<string>().IsRequired();
-            entity.Property(e => e.IssueDate).IsRequired();
-            entity.Property(e => e.CounterpartyTaxId).HasMaxLength(32).IsRequired();
-            entity.Property(e => e.NetAmount).HasPrecision(18, 2);
-            entity.Property(e => e.TaxAmount).HasPrecision(18, 2);
-            entity.Property(e => e.TotalAmount).HasPrecision(18, 2);
-            entity.Property(e => e.CurrencyCode).HasMaxLength(3).IsRequired();
-            entity.Property(e => e.Source).HasMaxLength(128).IsRequired();
-            entity.Property(e => e.Status).HasConversion<string>().IsRequired();
-            entity.Property(e => e.StatusReason).HasMaxLength(256);
-            entity.HasIndex(e => new { e.CompanyId, e.Folio, e.DocumentType }).IsUnique();
-            entity.HasIndex(e => new { e.CompanyId, e.IssueDate });
-            ConfigureCompanyReference(entity);
-        });
-
-        modelBuilder.Entity<TaxBookEntry>(entity =>
-        {
-            entity.ToTable("TaxBookEntries");
-            entity.HasKey(e => e.Id);
-            entity.Property(e => e.Year).IsRequired();
-            entity.Property(e => e.Month).IsRequired();
-            entity.Property(e => e.BookType).HasConversion<string>().IsRequired();
-            entity.Property(e => e.Folio).HasMaxLength(64).IsRequired();
-            entity.Property(e => e.DocumentType).HasConversion<string>().IsRequired();
-            entity.Property(e => e.IssueDate).IsRequired();
-            entity.Property(e => e.CounterpartyTaxId).HasMaxLength(32).IsRequired();
-            entity.Property(e => e.NetAmount).HasPrecision(18, 2);
-            entity.Property(e => e.TaxAmount).HasPrecision(18, 2);
-            entity.Property(e => e.TotalAmount).HasPrecision(18, 2);
-            entity.Property(e => e.CurrencyCode).HasMaxLength(3).IsRequired();
-            entity.HasIndex(e => new { e.CompanyId, e.Year, e.Month, e.BookType });
-            ConfigureCompanyReference(entity);
-        });
-
-        modelBuilder.Entity<TaxDeclaration>(entity =>
-        {
-            entity.ToTable("TaxDeclarations");
-            entity.HasKey(e => e.Id);
-            entity.Property(e => e.Year).IsRequired();
-            entity.Property(e => e.Month).IsRequired();
-            entity.Property(e => e.DeclarationType).HasConversion<string>().IsRequired();
-            entity.Property(e => e.Status).HasConversion<string>().IsRequired();
-            entity.Property(e => e.Payload).HasColumnType("jsonb").IsRequired();
-            entity.Property(e => e.ExternalReference).HasMaxLength(128);
-            entity.Property(e => e.StatusMessage).HasMaxLength(256);
-            entity.HasIndex(e => new { e.CompanyId, e.Year, e.Month, e.DeclarationType });
-            ConfigureCompanyReference(entity);
-        });
-
-        modelBuilder.Entity<AccountingAutomationRule>(entity =>
-        {
-            entity.ToTable("AccountingAutomationRules");
-            entity.HasKey(e => e.Id);
-            entity.Property(e => e.Name).HasMaxLength(128).IsRequired();
-            entity.Property(e => e.Trigger).HasConversion<string>().IsRequired();
-            entity.Property(e => e.DteDocumentType).HasConversion<string>();
-            entity.Property(e => e.SourceModule).HasMaxLength(64);
-            entity.Property(e => e.SourceDocumentType).HasMaxLength(64);
-            entity.Property(e => e.CounterpartyTaxId).HasMaxLength(32);
-            entity.Property(e => e.TaxCode).HasMaxLength(32);
-            entity.Property(e => e.IsActive).IsRequired();
-            entity.Property(e => e.ProposedBySystem).IsRequired();
-            entity.HasIndex(e => new { e.CompanyId, e.Trigger });
-            ConfigureCompanyReference(entity);
-        });
-
-        modelBuilder.Entity<AccountingAccountsPayable>(entity =>
-        {
-            entity.ToTable("AccountsPayables");
-            entity.HasKey(e => e.Id);
-            entity.Property(e => e.SourceType).IsRequired();
-            entity.Property(e => e.Status).IsRequired();
-            entity.OwnsOne(e => e.TotalAmount, owned =>
-            {
-                owned.Property(p => p.Amount).HasColumnName("TotalAmountAmount").HasPrecision(18, 2);
-                owned.Property(p => p.Currency).HasColumnName("TotalAmountCurrency").HasMaxLength(3);
-            });
-            entity.HasMany(e => e.Schedules)
-                .WithOne()
-                .HasForeignKey(s => s.AccountsPayableId)
-                .OnDelete(DeleteBehavior.Cascade);
-            ConfigureCompanyReference(entity);
-        });
-
-        modelBuilder.Entity<AccountingPayableSchedule>(entity =>
-        {
-            entity.ToTable("PayableSchedules");
-            entity.HasKey(e => e.Id);
-            entity.Property(e => e.Status).IsRequired();
-            entity.Property(e => e.DueDate).IsRequired();
-            entity.OwnsOne(e => e.Amount, owned =>
-            {
-                owned.Property(p => p.Amount).HasColumnName("AmountAmount").HasPrecision(18, 2);
-                owned.Property(p => p.Currency).HasColumnName("AmountCurrency").HasMaxLength(3);
-            });
-            ConfigureCompanyReference(entity);
-        });
-
-        modelBuilder.Entity<AccountingAccountsReceivable>(entity =>
-        {
-            entity.ToTable("AccountsReceivables");
-            entity.HasKey(e => e.Id);
-            entity.Property(e => e.Currency).HasMaxLength(3).IsRequired();
-            entity.Property(e => e.TotalAmount).HasPrecision(18, 2);
-            entity.Property(e => e.OutstandingAmount).HasPrecision(18, 2);
-            entity.HasMany(e => e.Schedules)
-                .WithOne()
-                .HasForeignKey(s => s.AccountsReceivableId)
-                .OnDelete(DeleteBehavior.Cascade);
-            ConfigureCompanyReference(entity);
-        });
-
-        modelBuilder.Entity<AccountingReceivableSchedule>(entity =>
-        {
-            entity.ToTable("ReceivableSchedules");
-            entity.HasKey(e => e.Id);
-            entity.Property(e => e.Amount).HasPrecision(18, 2);
             ConfigureCompanyReference(entity);
         });
     }

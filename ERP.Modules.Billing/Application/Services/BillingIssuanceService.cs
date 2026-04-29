@@ -1,7 +1,6 @@
 using ERP.Modules.Billing.Application.Repositories;
 using ERP.Modules.Billing.Domain;
 using ERP.Shared.Application;
-using ERP.Modules.Accounting.Contracts;
 using ERP.Shared.Domain.ValueObjects;
 
 namespace ERP.Modules.Billing.Application.Services;
@@ -69,22 +68,6 @@ public sealed class BillingIssuanceService
         var currency = invoiceResult.Lines.First().UnitPrice.Currency;
         var totalAmount = invoiceResult.Lines.Sum(line => line.Qty * line.UnitPrice.Amount);
 
-        await _eventPublisher.PublishAsync(
-            new AccountingPostRequested(
-                Guid.NewGuid().ToString(),
-                "Billing",
-                "Invoice",
-                invoiceResult.Id.ToString(),
-                "SALES",
-                invoiceResult.IssueDate ?? DateTime.UtcNow,
-                $"Invoice {invoiceResult.Number}",
-                new List<AccountingPostRequestedLine>
-                {
-                    new(receivableAccountId, totalAmount, 0m, currency, null),
-                    new(revenueAccountId, 0m, totalAmount, currency, null)
-                }),
-            cancellationToken);
-
         return result;
     }
 
@@ -122,22 +105,6 @@ public sealed class BillingIssuanceService
         var currency = invoiceResult.Lines.First().UnitPrice.Currency;
         var totalAmount = invoiceResult.Lines.Sum(line => line.Qty * line.UnitPrice.Amount);
 
-        await _eventPublisher.PublishAsync(
-            new AccountingPostRequested(
-                Guid.NewGuid().ToString(),
-                "Billing",
-                "InvoiceCancellation",
-                invoiceResult.Id.ToString(),
-                "SALES",
-                DateTime.UtcNow,
-                $"Invoice {invoiceResult.Number} cancellation",
-                new List<AccountingPostRequestedLine>
-                {
-                    new(revenueAccountId, totalAmount, 0m, currency, null),
-                    new(receivableAccountId, 0m, totalAmount, currency, null)
-                }),
-            cancellationToken);
-
         return result;
     }
 
@@ -170,22 +137,6 @@ public sealed class BillingIssuanceService
         }
 
         var creditResult = result.Value!;
-        await _eventPublisher.PublishAsync(
-            new AccountingPostRequested(
-                Guid.NewGuid().ToString(),
-                "Billing",
-                "CreditNote",
-                creditResult.Id.ToString(),
-                "SALES",
-                creditResult.IssuedAt ?? DateTime.UtcNow,
-                $"CreditNote {creditResult.Number}",
-                new List<AccountingPostRequestedLine>
-                {
-                    new(revenueAccountId, creditResult.Amount.Amount, 0m, creditResult.Amount.Currency, null),
-                    new(receivableAccountId, 0m, creditResult.Amount.Amount, creditResult.Amount.Currency, null)
-                }),
-            cancellationToken);
-
         return result;
     }
 
@@ -214,22 +165,6 @@ public sealed class BillingIssuanceService
         }
 
         var creditResult = result.Value!;
-        await _eventPublisher.PublishAsync(
-            new AccountingPostRequested(
-                Guid.NewGuid().ToString(),
-                "Billing",
-                "CreditNoteCancellation",
-                creditResult.Id.ToString(),
-                "SALES",
-                DateTime.UtcNow,
-                $"CreditNote {creditResult.Number} cancellation",
-                new List<AccountingPostRequestedLine>
-                {
-                    new(receivableAccountId, creditResult.Amount.Amount, 0m, creditResult.Amount.Currency, null),
-                    new(revenueAccountId, 0m, creditResult.Amount.Amount, creditResult.Amount.Currency, null)
-                }),
-            cancellationToken);
-
         return result;
     }
 
@@ -262,22 +197,6 @@ public sealed class BillingIssuanceService
         }
 
         var debitResult = result.Value!;
-        await _eventPublisher.PublishAsync(
-            new AccountingPostRequested(
-                Guid.NewGuid().ToString(),
-                "Billing",
-                "DebitNote",
-                debitResult.Id.ToString(),
-                "SALES",
-                debitResult.IssuedAt ?? DateTime.UtcNow,
-                $"DebitNote {debitResult.Number}",
-                new List<AccountingPostRequestedLine>
-                {
-                    new(receivableAccountId, debitResult.Amount.Amount, 0m, debitResult.Amount.Currency, null),
-                    new(revenueAccountId, 0m, debitResult.Amount.Amount, debitResult.Amount.Currency, null)
-                }),
-            cancellationToken);
-
         return result;
     }
 
@@ -306,22 +225,6 @@ public sealed class BillingIssuanceService
         }
 
         var debitResult = result.Value!;
-        await _eventPublisher.PublishAsync(
-            new AccountingPostRequested(
-                Guid.NewGuid().ToString(),
-                "Billing",
-                "DebitNoteCancellation",
-                debitResult.Id.ToString(),
-                "SALES",
-                DateTime.UtcNow,
-                $"DebitNote {debitResult.Number} cancellation",
-                new List<AccountingPostRequestedLine>
-                {
-                    new(revenueAccountId, debitResult.Amount.Amount, 0m, debitResult.Amount.Currency, null),
-                    new(receivableAccountId, 0m, debitResult.Amount.Amount, debitResult.Amount.Currency, null)
-                }),
-            cancellationToken);
-
         return result;
     }
 

@@ -15,7 +15,6 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ERP.Modules.Accounting\ERP.Modules.Accounting.csproj" />
     <ProjectReference Include="..\ERP.Modules.Billing\ERP.Modules.Billing.csproj" />
     <ProjectReference Include="..\ERP.Modules.Cash\ERP.Modules.Cash.csproj" />
     <ProjectReference Include="..\ERP.Documents\ERP.Documents.csproj" />

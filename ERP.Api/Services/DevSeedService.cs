@@ -1,7 +1,6 @@
 using ERP.Modules.MasterData.Application.Services;
 using ERP.Modules.MasterData.Contracts;
 using ERP.Modules.MasterData.Domain;
-using ERP.Modules.Accounting.Application.Services;
 using ERP.Modules.Pricing.Application.Services;
 using ERP.Modules.Purchasing.Application.Services;
 using ERP.Modules.Sales.Application.Services;
@@ -27,7 +26,6 @@ public sealed class DevSeedService
     private readonly PurchasingService _purchasingService;
     private readonly SalesService _salesService;
     private readonly PricingService _pricingService;
-    private readonly AccountingBootstrapService _accountingBootstrapService;
 
     public DevSeedService(
         ErpDbContext dbContext,
@@ -36,8 +34,7 @@ public sealed class DevSeedService
         ICurrencySeedService currencySeedService,
         PurchasingService purchasingService,
         SalesService salesService,
-        PricingService pricingService,
-        AccountingBootstrapService accountingBootstrapService)
+        PricingService pricingService)
     {
         _dbContext = dbContext;
         _masterDataService = masterDataService;
@@ -46,7 +43,6 @@ public sealed class DevSeedService
         _purchasingService = purchasingService;
         _salesService = salesService;
         _pricingService = pricingService;
-        _accountingBootstrapService = accountingBootstrapService;
     }
 
     public async Task<DevSeedResult> SeedBaseAsync(bool force, CancellationToken cancellationToken = default)
@@ -84,39 +80,6 @@ public sealed class DevSeedService
             force,
             results,
             seededAny ? "Base demo data seeded." : "Base demo data already exists. Use ?force=true to reseed.");
-    }
-
-    public async Task<DevSeedResult> SeedAccountingAsync(bool force, CancellationToken cancellationToken = default)
-    {
-        await EnsureDemoCompaniesExistAsync(cancellationToken);
-
-        var results = new List<DevSeedCompanyResult>();
-        var seededAny = false;
-        foreach (var company in DemoCompanies)
-        {
-            await EnsureCompanyCurrencyAsync(company.CompanyId, "CLP", cancellationToken);
-
-            var hasAccountingData = await HasAccountingDataAsync(company.CompanyId, cancellationToken);
-            if (hasAccountingData && !force)
-            {
-                results.Add(new DevSeedCompanyResult(company.CompanyId, company.Name, company.Slug, "skipped"));
-                continue;
-            }
-
-            EnsureSuccess(await _accountingBootstrapService.EnsureCompanySeededAsync(
-                company.CompanyId,
-                "CLP",
-                cancellationToken));
-
-            results.Add(new DevSeedCompanyResult(company.CompanyId, company.Name, company.Slug, "seeded"));
-            seededAny = true;
-        }
-
-        return new DevSeedResult(
-            seededAny,
-            force,
-            results,
-            seededAny ? "Accounting demo data seeded." : "Accounting demo data already exists. Use ?force=true to reseed.");
     }
 
     public async Task<DevSeedResult> SeedPricesAsync(bool force, CancellationToken cancellationToken = default)
@@ -162,7 +125,6 @@ public sealed class DevSeedService
         foreach (var company in DemoCompanies)
         {
             await EnsureBaseDataExistsAsync(company, cancellationToken);
-            await EnsureAccountingDataExistsAsync(company, cancellationToken);
             await EnsurePriceDataExistsAsync(company, cancellationToken);
 
             var hasOperationData = await HasOperationDataAsync(company.CompanyId, cancellationToken);
@@ -315,21 +277,6 @@ public sealed class DevSeedService
             .AnyAsync(supplier => supplier.CompanyId == companyId, cancellationToken);
     }
 
-    private async Task<bool> HasAccountingDataAsync(long companyId, CancellationToken cancellationToken)
-    {
-        var hasSettings = await _dbContext.CompanyAccountingSettings
-            .AsNoTracking()
-            .AnyAsync(settings => settings.CompanyId == companyId, cancellationToken);
-        if (hasSettings)
-        {
-            return true;
-        }
-
-        return await _dbContext.Journals
-            .AsNoTracking()
-            .AnyAsync(journal => journal.CompanyId == companyId, cancellationToken);
-    }
-
     private async Task<bool> HasCompletePricesAsync(long companyId, CancellationToken cancellationToken)
     {
         var requiredSkus = BuildProductSeeds().Take(10).Select(seed => seed.Sku).ToArray();
@@ -392,15 +339,6 @@ public sealed class DevSeedService
         if (!hasBaseData)
         {
             throw new InvalidOperationException($"Base demo data is missing for company {company.CompanyId}. Run /api/dev/seed/base first.");
-        }
-    }
-
-    private async Task EnsureAccountingDataExistsAsync(DevSeedCompany company, CancellationToken cancellationToken)
-    {
-        var hasAccountingData = await HasAccountingDataAsync(company.CompanyId, cancellationToken);
-        if (!hasAccountingData)
-        {
-            throw new InvalidOperationException($"Accounting demo data is missing for company {company.CompanyId}. Run /api/dev/seed/accounting first.");
         }
     }
 
@@ -705,20 +643,6 @@ public sealed class DevSeedService
             .Where(message => message.PayloadJson.Contains(companyToken))
             .ExecuteDeleteAsync(cancellationToken);
 
-        await _dbContext.JournalEntryLines.Where(line => line.CompanyId == companyId).ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.JournalEntries.Where(entry => entry.CompanyId == companyId).ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.AccountingReceivableSchedules.Where(schedule => schedule.CompanyId == companyId)
-            .ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.AccountingAccountsReceivables.Where(receivable => receivable.CompanyId == companyId)
-            .ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.AccountingPayableSchedules.Where(schedule => schedule.CompanyId == companyId)
-            .ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.AccountingAccountsPayables.Where(payable => payable.CompanyId == companyId)
-            .ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.AccountsReceivables.Where(receivable => receivable.CompanyId == companyId)
-            .ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.AccountsPayables.Where(payable => payable.CompanyId == companyId)
-            .ExecuteDeleteAsync(cancellationToken);
         await _dbContext.InvoiceLines.Where(line => line.CompanyId == companyId).ExecuteDeleteAsync(cancellationToken);
         await _dbContext.Invoices.Where(invoice => invoice.CompanyId == companyId).ExecuteDeleteAsync(cancellationToken);
         await _dbContext.CreditNotes.Where(note => note.CompanyId == companyId).ExecuteDeleteAsync(cancellationToken);
@@ -743,24 +667,6 @@ public sealed class DevSeedService
         var companyToken = $"\\\"companyId\\\":{companyId}";
         await _dbContext.OutboxMessages
             .Where(message => message.PayloadJson.Contains(companyToken))
-            .ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.JournalEntryLines.Where(line => line.CompanyId == companyId).ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.JournalEntries.Where(entry => entry.CompanyId == companyId).ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.Accounts.Where(account => account.CompanyId == companyId).ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.Journals.Where(journal => journal.CompanyId == companyId).ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.AccountingPeriods.Where(period => period.CompanyId == companyId).ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.CompanyAccountingSettings.Where(settings => settings.CompanyId == companyId).ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.AccountingReceivableSchedules.Where(schedule => schedule.CompanyId == companyId)
-            .ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.AccountingAccountsReceivables.Where(receivable => receivable.CompanyId == companyId)
-            .ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.AccountingPayableSchedules.Where(schedule => schedule.CompanyId == companyId)
-            .ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.AccountingAccountsPayables.Where(payable => payable.CompanyId == companyId)
-            .ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.AccountsReceivables.Where(receivable => receivable.CompanyId == companyId)
-            .ExecuteDeleteAsync(cancellationToken);
-        await _dbContext.AccountsPayables.Where(payable => payable.CompanyId == companyId)
             .ExecuteDeleteAsync(cancellationToken);
         await _dbContext.InvoiceLines.Where(line => line.CompanyId == companyId).ExecuteDeleteAsync(cancellationToken);
         await _dbContext.Invoices.Where(invoice => invoice.CompanyId == companyId).ExecuteDeleteAsync(cancellationToken);

@@ -1,7 +1,6 @@
 using ERP.Modules.Cash.Application.Repositories;
 using ERP.Modules.Cash.Domain;
 using ERP.Shared.Application;
-using ERP.Modules.Accounting.Contracts;
 using ERP.Shared.Domain.ValueObjects;
 
 namespace ERP.Modules.Cash.Application.Services;
@@ -107,22 +106,6 @@ public sealed class CashApplicationService
         }
 
         var paymentResult = result.Value!;
-        await _eventPublisher.PublishAsync(
-            new AccountingPostRequested(
-                Guid.NewGuid().ToString(),
-                "Cash",
-                "Payment",
-                paymentResult.Id.ToString(),
-                "BANK",
-                paidAt,
-                reference ?? $"Payment {paymentResult.Id}",
-                new List<AccountingPostRequestedLine>
-                {
-                    new(payableAccountId, amount.Amount, 0m, amount.Currency, null),
-                    new(bankLedgerAccountId, 0m, amount.Amount, amount.Currency, null)
-                }),
-            cancellationToken);
-
         return result;
     }
 
@@ -159,22 +142,6 @@ public sealed class CashApplicationService
         }
 
         var receiptResult = result.Value!;
-        await _eventPublisher.PublishAsync(
-            new AccountingPostRequested(
-                Guid.NewGuid().ToString(),
-                "Cash",
-                "Receipt",
-                receiptResult.Id.ToString(),
-                "BANK",
-                receivedAt,
-                reference ?? $"Receipt {receiptResult.Id}",
-                new List<AccountingPostRequestedLine>
-                {
-                    new(bankLedgerAccountId, amount.Amount, 0m, amount.Currency, null),
-                    new(receivableAccountId, 0m, amount.Amount, amount.Currency, null)
-                }),
-            cancellationToken);
-
         return result;
     }
 }

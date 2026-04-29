@@ -2,7 +2,6 @@ using System;
 using ERP.Api.Authorization;
 using ERP.Api.Contracts.Identity;
 using ERP.Api.Services;
-using ERP.Modules.Accounting.Application.Services;
 using ERP.Modules.Identity.Contracts;
 using ERP.Modules.Identity.Application.Services;
 using ERP.Modules.MasterData.Contracts;
@@ -25,7 +24,6 @@ public sealed class IdentityController : ControllerBase
     private readonly TaxEntityService _taxEntityService;
     private readonly CompanyAccessService _companyAccessService;
     private readonly BootstrapCompanyService _bootstrapCompanyService;
-    private readonly AccountingChartSeedService _chartSeedService;
     private readonly IWorkspaceResolver _workspaceResolver;
     private readonly UserPermissionsService _userPermissionsService;
     private readonly ICompanyRepository _companyRepository;
@@ -37,7 +35,6 @@ public sealed class IdentityController : ControllerBase
         TaxEntityService taxEntityService,
         CompanyAccessService companyAccessService,
         BootstrapCompanyService bootstrapCompanyService,
-        AccountingChartSeedService chartSeedService,
         IWorkspaceResolver workspaceResolver,
         UserPermissionsService userPermissionsService,
         ICompanyRepository companyRepository)
@@ -49,7 +46,6 @@ public sealed class IdentityController : ControllerBase
         _taxEntityService = taxEntityService;
         _companyAccessService = companyAccessService;
         _bootstrapCompanyService = bootstrapCompanyService;
-        _chartSeedService = chartSeedService;
         _workspaceResolver = workspaceResolver;
         _userPermissionsService = userPermissionsService;
         _companyRepository = companyRepository;
@@ -393,25 +389,6 @@ public sealed class IdentityController : ControllerBase
                         bootstrapResult.UserId,
                         cancellationToken);
                 }
-            }
-        }
-
-        const string chartVersion = "CL_BASIC";
-        var templateResult = await _chartSeedService.EnsureGlobalTemplateAsync(chartVersion, cancellationToken);
-        if (!templateResult.Success)
-        {
-            return BadRequest(new { error = templateResult.Error ?? "Bootstrap chart of accounts template failed." });
-        }
-
-        foreach (var companyId in companyValue.CompanyIds)
-        {
-            var chartResult = await _chartSeedService.SeedCompanyChartOfAccountsFromGlobalTemplateAsync(
-                companyId,
-                chartVersion,
-                cancellationToken);
-            if (!chartResult.Success)
-            {
-                return BadRequest(new { error = chartResult.Error ?? "Bootstrap chart of accounts failed." });
             }
         }
 

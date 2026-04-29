@@ -9,10 +9,8 @@ namespace ERP.Api.Services;
 
 public sealed class InitialSeedService
 {
-    private const string DefaultChartVersion = "CL_BASIC";
     private readonly IUnitOfMeasureSeedService _unitOfMeasureSeedService;
     private readonly IGeoSeedService _geoSeedService;
-    private readonly ERP.Modules.Accounting.Application.Services.AccountingChartSeedService _chartSeedService;
     private readonly ICurrencySeedService _currencySeedService;
     private readonly ErpDbContext _dbContext;
     private readonly IConfiguration _configuration;
@@ -23,7 +21,6 @@ public sealed class InitialSeedService
     public InitialSeedService(
         IUnitOfMeasureSeedService unitOfMeasureSeedService,
         IGeoSeedService geoSeedService,
-        ERP.Modules.Accounting.Application.Services.AccountingChartSeedService chartSeedService,
         ICurrencySeedService currencySeedService,
         ErpDbContext dbContext,
         IConfiguration configuration,
@@ -33,7 +30,6 @@ public sealed class InitialSeedService
     {
         _unitOfMeasureSeedService = unitOfMeasureSeedService;
         _geoSeedService = geoSeedService;
-        _chartSeedService = chartSeedService;
         _currencySeedService = currencySeedService;
         _dbContext = dbContext;
         _configuration = configuration;
@@ -103,26 +99,6 @@ public sealed class InitialSeedService
         cancellationToken.ThrowIfCancellationRequested();
 
         _logger.LogInformation("Supplementary RBAC seed completed successfully.");
-        return Result.Ok();
-    }
-
-    public async Task<Result> SeedGlobalAccountingAsync(CancellationToken cancellationToken = default)
-    {
-        _logger.LogInformation("Starting global accounting seed.");
-
-        var chartSeed = await _chartSeedService.EnsureGlobalTemplateAsync(DefaultChartVersion, cancellationToken);
-        if (!chartSeed.Success)
-            throw new InvalidOperationException(chartSeed.Error ?? "Failed to seed chart of accounts template.");
-
-        cancellationToken.ThrowIfCancellationRequested();
-
-        var currencySeed = await _currencySeedService.SeedAsync(cancellationToken);
-        if (!currencySeed.Success)
-            throw new InvalidOperationException(currencySeed.Error ?? "Failed to seed currencies.");
-
-        cancellationToken.ThrowIfCancellationRequested();
-
-        _logger.LogInformation("Global accounting seed completed successfully.");
         return Result.Ok();
     }
 

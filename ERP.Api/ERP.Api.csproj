@@ -17,8 +17,6 @@
     <ProjectReference Include="..\ERP.Modules.Sales\ERP.Modules.Sales.csproj" />
     <ProjectReference Include="..\ERP.Modules.Tax\ERP.Modules.Tax.csproj" />
     <ProjectReference Include="..\ERP.Modules.Billing\ERP.Modules.Billing.csproj" />
-    <ProjectReference Include="..\ERP.Modules.Accounting\ERP.Modules.Accounting.csproj" />
-    <ProjectReference Include="..\ERP.Modules.Accounting.Contracts\ERP.Modules.Accounting.Contracts.csproj" />
     <ProjectReference Include="..\ERP.Modules.Subscriptions\ERP.Modules.Subscriptions.csproj" />
     <ProjectReference Include="..\ERP.Modules.Integrations.Contracts\ERP.Modules.Integrations.Contracts.csproj" />
     <ProjectReference Include="..\ERP.Modules.Integrations\ERP.Modules.Integrations.csproj" />

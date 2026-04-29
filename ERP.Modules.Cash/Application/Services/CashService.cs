@@ -3,7 +3,6 @@ using ERP.Modules.Cash.Domain;
 using ERP.Modules.Purchasing.Contracts;
 using ERP.Modules.Sales.Contracts;
 using ERP.Shared.Application;
-using ERP.Modules.Accounting.Contracts;
 using ERP.Shared.Domain.ValueObjects;
 
 namespace ERP.Modules.Cash.Application.Services;
@@ -145,22 +144,6 @@ public sealed class CashService
             return result;
         }
 
-        await _eventPublisher.PublishAsync(
-            new AccountingPostRequested(
-                Guid.NewGuid().ToString(),
-                "Cash",
-                "ReceiptApplication",
-                $"{receiptId}:{salesDocumentId}",
-                "BANK",
-                DateTime.UtcNow,
-                $"Receipt {receiptId} applied to invoice {salesDocumentId}",
-                new List<AccountingPostRequestedLine>
-                {
-                    new(bankAccountId, amount, 0m, null, null),
-                    new(accountsReceivableAccountId, 0m, amount, null, null)
-                }),
-            cancellationToken);
-
         return result;
     }
 
@@ -200,22 +183,6 @@ public sealed class CashService
         {
             return result;
         }
-
-        await _eventPublisher.PublishAsync(
-            new AccountingPostRequested(
-                Guid.NewGuid().ToString(),
-                "Cash",
-                "PaymentApplication",
-                $"{paymentId}:{purchaseOrderId}",
-                "BANK",
-                DateTime.UtcNow,
-                $"Payment {paymentId} applied to PO {purchaseOrderId}",
-                new List<AccountingPostRequestedLine>
-                {
-                    new(accountsPayableAccountId, amount, 0m, null, null),
-                    new(bankAccountId, 0m, amount, null, null)
-                }),
-            cancellationToken);
 
         return result;
     }

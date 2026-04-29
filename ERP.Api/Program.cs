@@ -1,5 +1,4 @@
 using System.Text;
-using ERP.Modules.Accounting.Application.Repositories;
 using ERP.Modules.Billing.Application.Repositories;
 using ERP.Modules.Billing.Application.Services;
 using ERP.Modules.Cash.Application.Repositories;
@@ -25,8 +24,6 @@ using ERP.Modules.Rfid.Application.Repositories;
 using ERP.Modules.Rfid.Application.Services;
 using ERP.Modules.Wsu.Application.Repositories;
 using ERP.Modules.Wsu.Application.Services;
-using ERP.Modules.Accounting.Application.Services;
-using ERP.Modules.Accounting.Application.Reports;
 using ERP.Modules.MasterData.Contracts;
 using ERP.Modules.MasterData.Application.Services;
 using ERP.Modules.Wms.Application.Repositories;
@@ -43,7 +40,6 @@ using ERP.Modules.Tax.Application.Repositories;
 using ERP.Modules.Subscriptions.Application.Repositories;
 using ERP.Modules.Subscriptions.Application.Services;
 using ERP.Persistence.Interceptors;
-using ERP.Persistence.Reports;
 using ERP.Persistence.Repositories;
 using ERP.Persistence.Services;
 using PasswordResetTokenRepository = ERP.Persistence.Repositories.PasswordResetTokenRepository;
@@ -57,8 +53,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi;
-using AccountingAccountsPayableRepository = ERP.Modules.Accounting.Application.Repositories.IAccountsPayableRepository;
-using AccountingAccountsReceivableRepository = ERP.Modules.Accounting.Application.Repositories.IAccountsReceivableRepository;
 using ApiJwtOptions = ERP.Api.Authentication.JwtOptions;
 using IdentityJwtOptions = ERP.Modules.Identity.Application.Services.JwtOptions;
 using ERP.Persistence;
@@ -301,13 +295,10 @@ builder.Services.AddScoped<ERP.Modules.MasterData.Application.Handlers.SupplierC
 builder.Services.AddScoped<ERP.Modules.MasterData.Application.Handlers.SupplierQueryHandler>();
 builder.Services.AddScoped<ERP.Modules.MasterData.Application.Handlers.ProductSupplierCommandHandler>();
 builder.Services.AddScoped<ERP.Modules.MasterData.Application.Handlers.ProductSupplierQueryHandler>();
-builder.Services.AddScoped<IPurchaseInvoiceQrParser, JsonPurchaseInvoiceQrParser>();
 builder.Services.AddScoped<WarehouseLayoutService>();
 builder.Services.AddScoped<IDocumentRepository, InMemoryDocumentRepository>();
 builder.Services.AddScoped<DocumentCommandHandler>();
 builder.Services.AddScoped<DocumentQueryHandler>();
-builder.Services.AddScoped<IEventHandler<ERP.Modules.Inventory.Domain.StockMoved>, StockMovedHandler>();
-builder.Services.AddScoped<IEventHandler<ERP.Modules.Accounting.Contracts.AccountingPostRequested>, ERP.Modules.Accounting.Application.Handlers.AccountingPostRequestedHandler>();
 builder.Services.AddScoped<IUnitOfWork, ErpUnitOfWork>();
 builder.Services.AddScoped<TaxEntityService>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
@@ -328,16 +319,6 @@ builder.Services.AddScoped<ICountryRepository, CountryRepository>();
 builder.Services.AddScoped<ISubdivisionRepository, SubdivisionRepository>();
 builder.Services.AddScoped<ICityRepository, CityRepository>();
 builder.Services.AddScoped<ILocalityRepository, LocalityRepository>();
-builder.Services.AddScoped<IAccountRepository, AccountRepository>();
-builder.Services.AddScoped<IAccountingAccountTemplateRepository, AccountingAccountTemplateRepository>();
-builder.Services.AddScoped<IJournalEntryRepository, JournalEntryRepository>();
-builder.Services.AddScoped<IJournalRepository, JournalRepository>();
-builder.Services.AddScoped<IAccountingPeriodRepository, AccountingPeriodRepository>();
-builder.Services.AddScoped<ICompanyAccountingSettingsRepository, CompanyAccountingSettingsRepository>();
-builder.Services.AddScoped<IDteDocumentRepository, DteDocumentRepository>();
-builder.Services.AddScoped<ITaxBookEntryRepository, TaxBookEntryRepository>();
-builder.Services.AddScoped<ITaxDeclarationRepository, TaxDeclarationRepository>();
-builder.Services.AddScoped<IAccountingAutomationRuleRepository, AccountingAutomationRuleRepository>();
 builder.Services.AddScoped<IInventoryMovementRepository, InventoryMovementRepository>();
 builder.Services.AddScoped<IStockRepository, StockRepository>();
 builder.Services.AddScoped<IPurchaseOrderRepository, PurchaseOrderRepository>();
@@ -352,7 +333,6 @@ builder.Services.AddScoped<ISalesQuoteRepository, SalesQuoteRepository>();
 builder.Services.AddScoped<IPriceListRepository, PriceListRepository>();
 builder.Services.AddScoped<IPriceListItemRepository, PriceListItemRepository>();
 builder.Services.AddScoped<IPricingPolicyRepository, PricingPolicyRepository>();
-builder.Services.AddScoped<AccountingAccountsReceivableRepository, AccountsReceivableRepository>();
 builder.Services.AddScoped<IUserProfileRepository, UserProfileRepository>();
 builder.Services.AddScoped<IOutboxRepository, OutboxRepository>();
 builder.Services.AddScoped<ERP.Workflows.Application.Repositories.IWorkflowDefinitionRepository, WorkflowDefinitionRepository>();
@@ -365,7 +345,6 @@ builder.Services.AddScoped<IBankAccountRepository, BankAccountRepository>();
 builder.Services.AddScoped<IBankStatementRepository, BankStatementRepository>();
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 builder.Services.AddScoped<IReceiptRepository, ReceiptRepository>();
-builder.Services.AddScoped<AccountingAccountsPayableRepository, AccountsPayableRepository>();
 builder.Services.AddScoped<IInvoiceRepository, InvoiceRepository>();
 builder.Services.AddScoped<ICreditNoteRepository, CreditNoteRepository>();
 builder.Services.AddScoped<IRfidTagRepository, RfidTagRepository>();
@@ -435,7 +414,6 @@ builder.Services.AddScoped<RejectSalesQuoteHandler>();
 builder.Services.AddScoped<SalesQuoteQueryHandler>();
 builder.Services.AddScoped<PricingService>();
 builder.Services.AddScoped<PricingPolicyService>();
-builder.Services.AddScoped<ReportsService>();
 builder.Services.AddScoped<WsuOrderService>(serviceProvider =>
 {
     var options = serviceProvider.GetRequiredService<Microsoft.Extensions.Options.IOptions<WsuOptions>>().Value;
@@ -459,10 +437,8 @@ builder.Services.AddScoped<WsuOrderService>(serviceProvider =>
 builder.Services.AddScoped<TaxService>();
 builder.Services.AddScoped<CashApplicationService>();
 builder.Services.AddScoped<BankReconciliationService>();
-builder.Services.AddScoped<PayablesService>();
 builder.Services.AddScoped<ERP.Workflows.Application.Services.WorkflowRuleEvaluator>();
 builder.Services.AddScoped<ERP.Workflows.Application.Services.WorkflowService>();
-builder.Services.AddScoped<ReceivablesService>();
 builder.Services.AddScoped<BillingNumberingService>();
 builder.Services.AddScoped<BillingIssuanceService>();
 builder.Services.AddScoped<BillingStatusService>();
@@ -493,20 +469,11 @@ builder.Services.AddScoped<IPasswordReuseValidator, PasswordReuseValidator>();
 builder.Services.AddScoped<ISessionInvalidationService, SessionInvalidationService>();
 builder.Services.AddScoped<PasswordResetService>();
 builder.Services.AddScoped<RfidService>();
-builder.Services.AddScoped<AccountingService>();
-builder.Services.AddScoped<AccountingPostingService>();
-builder.Services.AddScoped<AccountingAutomationEngine>();
-builder.Services.AddScoped<AccountingChartSeedService>();
-builder.Services.AddScoped<AccountingBootstrapService>();
-builder.Services.AddScoped<AccountingPeriodService>();
-builder.Services.AddScoped<AccountingAuditService>();
-builder.Services.AddScoped<TaxComplianceService>();
 builder.Services.AddScoped<UserProfileService>();
 builder.Services.AddScoped<InitialSeedService>();
 builder.Services.AddScoped<DevSeedService>();
 builder.Services.AddScoped<RfidSeedService>();
 builder.Services.AddScoped<ITenantContext, HttpContextTenantContext>();
-builder.Services.AddScoped<IChartOfAccountsTemplateSource, JsonChartOfAccountsTemplateSource>();
 
 // Add email notifications with hot reload support
 builder.Services.AddNotifications(builder.Configuration);
@@ -691,40 +658,6 @@ app.MapPost("/api/seed/global/rbac/otros", async (
     }
 });
 
-app.MapPost("/api/seed/global/accounting", async (
-    InitialSeedService initialSeedService,
-    HttpRequest request,
-    IConfiguration configuration,
-    ILogger<Program> logger,
-    CancellationToken cancellationToken = default) =>
-{
-    var seedKey = configuration["GlobalSeed:Key"];
-    if (string.IsNullOrWhiteSpace(seedKey))
-    {
-        return Results.Problem("GlobalSeed:Key is not configured.", statusCode: StatusCodes.Status500InternalServerError);
-    }
-
-    if (!request.Headers.TryGetValue("X-GLOBAL-SEED-KEY", out var providedKey)
-        || !string.Equals(providedKey.ToString(), seedKey, StringComparison.Ordinal))
-    {
-        return Results.Unauthorized();
-    }
-
-    try
-    {
-        var result = await initialSeedService.SeedGlobalAccountingAsync(cancellationToken);
-        return Results.Ok(result);
-    }
-    catch (InvalidOperationException ex)
-    {
-        return Results.Problem(ex.Message, statusCode: StatusCodes.Status500InternalServerError);
-    }
-    catch (Exception ex)
-    {
-        logger.LogError(ex, "Global accounting seed failed.");
-        return Results.Problem("Failed to run the global accounting seed.", statusCode: StatusCodes.Status500InternalServerError);
-    }
-});
 
 app.MapPost("/api/seed/rfid", async (
     RfidSeedService rfidSeedService,
@@ -843,37 +776,6 @@ if (app.Environment.IsDevelopment())
         }
     });
 
-    app.MapPost("/api/dev/seed/accounting", async (
-        DevSeedService devSeedService,
-        ILogger<Program> logger,
-        HttpRequest request,
-        IConfiguration configuration,
-        bool force = false,
-        CancellationToken cancellationToken = default) =>
-    {
-        try
-        {
-            var validationError = GetDevSeedConfigurationError(request, configuration);
-            if (validationError is not null)
-            {
-                return validationError == "unauthorized"
-                    ? Results.Unauthorized()
-                    : Results.Problem(validationError, statusCode: StatusCodes.Status500InternalServerError);
-            }
-
-            var result = await devSeedService.SeedAccountingAsync(force, cancellationToken);
-            return Results.Ok(result);
-        }
-        catch (InvalidOperationException ex)
-        {
-            return Results.Problem(ex.Message, statusCode: StatusCodes.Status500InternalServerError);
-        }
-        catch (Exception ex)
-        {
-            logger.LogError(ex, "Dev seed accounting failed.");
-            return Results.Problem("Failed to run the dev seed accounting.", statusCode: StatusCodes.Status500InternalServerError);
-        }
-    });
 
     app.MapPost("/api/dev/seed/prices", async (
         DevSeedService devSeedService,

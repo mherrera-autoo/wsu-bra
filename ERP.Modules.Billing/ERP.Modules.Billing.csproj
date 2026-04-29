@@ -6,6 +6,5 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\ERP.Shared\ERP.Shared.csproj" />
-    <ProjectReference Include="..\ERP.Modules.Accounting.Contracts\ERP.Modules.Accounting.Contracts.csproj" />
   </ItemGroup>
 </Project>

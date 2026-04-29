@@ -1,7 +1,6 @@
 using ERP.Modules.Billing.Application.Repositories;
 using ERP.Modules.Billing.Domain;
 using ERP.Shared.Application;
-using ERP.Modules.Accounting.Contracts;
 using ERP.Shared.Domain.ValueObjects;
 
 namespace ERP.Modules.Billing.Application.Services;
@@ -60,22 +59,6 @@ public sealed class BillingService
 
         var invoiceResult = result.Value!;
         var total = invoiceResult.GetTotal();
-        await _eventPublisher.PublishAsync(
-            new AccountingPostRequested(
-                Guid.NewGuid().ToString(),
-                "Billing",
-                "Invoice",
-                invoiceResult.Id.ToString(),
-                "SALES",
-                invoiceResult.IssueDate ?? DateTime.UtcNow,
-                "Invoice issuance",
-                new List<AccountingPostRequestedLine>
-                {
-                    new(receivableAccountId, total.Amount, 0m, total.Currency, null),
-                    new(revenueAccountId, 0m, total.Amount, total.Currency, null)
-                }),
-            cancellationToken);
-
         return result;
     }
 
@@ -121,22 +104,6 @@ public sealed class BillingService
 
         var invoiceResult = result.Value!.Item1;
         var total = invoiceResult.GetTotal();
-        await _eventPublisher.PublishAsync(
-            new AccountingPostRequested(
-                Guid.NewGuid().ToString(),
-                "Billing",
-                "InvoiceCancellation",
-                invoiceResult.Id.ToString(),
-                "SALES",
-                DateTime.UtcNow,
-                "Invoice cancellation",
-                new List<AccountingPostRequestedLine>
-                {
-                    new(revenueAccountId, total.Amount, 0m, total.Currency, null),
-                    new(receivableAccountId, 0m, total.Amount, total.Currency, null)
-                }),
-            cancellationToken);
-
         return result;
     }
 }
